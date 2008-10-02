@@ -56,7 +56,9 @@ TT_TEST_BEGIN(tricky_partial_specialization_test)
 //
 
 BOOST_CHECK_INTEGRAL_CONSTANT(::tt::alignment_of<char&>::value, ALIGNOF(void*));
+#if !defined __CODEGEARC__  // CodeGear cannot parse function references inside alignof
 BOOST_CHECK_INTEGRAL_CONSTANT(::tt::alignment_of<char (&)(int)>::value, ALIGNOF(void*));
+#endif
 BOOST_CHECK_INTEGRAL_CONSTANT(::tt::alignment_of<char(&)[4]>::value, ALIGNOF(void*));
 
 BOOST_CHECK_INTEGRAL_CONSTANT((::tt::is_base_of<Base&,Derived>::value), false);
