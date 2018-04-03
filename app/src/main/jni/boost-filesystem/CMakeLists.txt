@@ -54,6 +54,7 @@ target_include_directories(
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-smart_ptr/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-iterator/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-mpl/master/include
+  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-preprocessor/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-system/master/include)
 
 #target_link_libraries(
