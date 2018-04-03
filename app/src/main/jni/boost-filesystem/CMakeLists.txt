@@ -46,8 +46,9 @@ target_compile_options(
 target_include_directories(
   boost-filesystem
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/master/include
-  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-config/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-core/master/include
+  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-config/master/include
+  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-type_traits/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-system/master/include)
 
 #target_link_libraries(
