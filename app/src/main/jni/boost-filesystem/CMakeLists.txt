@@ -49,6 +49,8 @@ target_include_directories(
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-core/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-config/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-type_traits/master/include
+  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-predef/master/include
+  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-assert/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-system/master/include)
 
 #target_link_libraries(
