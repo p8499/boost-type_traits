@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/key_kbg_1" android:state_checked="true" android:state_pressed="true" android:state_checkable="true"/>
+    <item android:drawable="@drawable/key_kbg_2" android:state_checked="true" android:state_pressed="false" android:state_checkable="true"/>
+    <item android:drawable="@drawable/key_kbg_3" android:state_checked="false" android:state_pressed="true" android:state_checkable="true"/>
+    <item android:drawable="@drawable/key_kbg_4" android:state_checked="false" android:state_pressed="false" android:state_checkable="true"/>
+    <item android:drawable="@drawable/key_kbg_5" android:state_pressed="true" android:state_checkable="false"/>
+    <item android:drawable="@drawable/key_kbg_6" android:state_pressed="false" android:state_checkable="false"/>
+</selector>

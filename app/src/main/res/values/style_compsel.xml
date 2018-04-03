@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="compsel">
+        <item name="android:textSize">16sp</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+</resources>

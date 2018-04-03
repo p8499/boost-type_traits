@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="popupitemfirst">
+        <item name="android:background">@drawable/popupitemfirst_bg</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/popupitemfirst_tc</item>
+    </style>
+</resources>

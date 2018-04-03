@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--This file maps android.view.KeyEvent meta codes into rime/key_table.cc modifier codes-->
+<relations>
+    <!--SHIFT key locked in CAPS mode. Reserved for use by {@link MetaKeyKeyListener} for a published constant in its API. @hide-->
+    <!--META_CAP_LOCKED-->
+    <!--<relation>-->
+    <!--<fromName>META_CAP_LOCKED</fromName>-->
+    <!--<fromValue>0x100</fromValue>-->
+    <!--</relation>-->
+
+    <!--ALT key locked. Reserved for use by {@link MetaKeyKeyListener} for a published constant in its API. @hide-->
+    <!--META_ALT_LOCKED-->
+    <!--<relation>-->
+    <!--<fromName>META_ALT_LOCKED</fromName>-->
+    <!--<fromValue>0x200</fromValue>-->
+    <!--</relation>-->
+
+    <!--SYM key locked. Reserved for use by {@link MetaKeyKeyListener} for a published constant in its API. @hide-->
+    <!--META_SYM_LOCKED-->
+    <!--<relation>-->
+    <!--<fromName>META_SYM_LOCKED</fromName>-->
+    <!--<fromValue>0x400</fromValue>-->
+    <!--</relation>-->
+
+    <!--Text is in selection mode. Reserved for use by {@link MetaKeyKeyListener} for a private unpublished constant in its API that is currently being retained for legacy reasons. @hide-->
+    <!--META_SELECTING-->
+    <!--<relation>-->
+    <!--<fromName>META_SELECTING</fromName>-->
+    <!--<fromValue>0x800</fromValue>-->
+    <!--</relation>-->
+
+    <!--<p>This mask is used to check whether one of the ALT meta keys is pressed.</p> @see #isAltPressed() @see #getMetaState() @see #KEYCODE_ALT_LEFT @see #KEYCODE_ALT_RIGHT-->
+    <!--META_ALT_ON-->
+    <relation>
+        <fromName>META_ALT_ON</fromName>
+        <fromValue>0x02</fromValue>
+        <thruName>Alt</thruName>
+    </relation>
+
+    <!--<p>This mask is used to check whether the left ALT meta key is pressed.</p> @see #isAltPressed() @see #getMetaState() @see #KEYCODE_ALT_LEFT-->
+    <!--META_ALT_LEFT_ON-->
+    <!--<relation>-->
+    <!--<fromName>META_ALT_LEFT_ON</fromName>-->
+    <!--<fromValue>0x10</fromValue>-->
+    <!--</relation>-->
+
+    <!--<p>This mask is used to check whether the right the ALT meta key is pressed.</p> @see #isAltPressed() @see #getMetaState() @see #KEYCODE_ALT_RIGHT-->
+    <!--META_ALT_RIGHT_ON-->
+    <!--<relation>-->
+    <!--<fromName>META_ALT_RIGHT_ON</fromName>-->
+    <!--<fromValue>0x20</fromValue>-->
+    <!--</relation>-->
+
+    <!--<p>This mask is used to check whether one of the SHIFT meta keys is pressed.</p> @see #isShiftPressed() @see #getMetaState() @see #KEYCODE_SHIFT_LEFT @see #KEYCODE_SHIFT_RIGHT-->
+    <!--META_SHIFT_ON-->
+    <relation>
+        <fromName>META_SHIFT_ON</fromName>
+        <fromValue>0x1</fromValue>
+        <thruName>Shift</thruName>
+    </relation>
+
+    <!--<p>This mask is used to check whether the left SHIFT meta key is pressed.</p> @see #isShiftPressed() @see #getMetaState() @see #KEYCODE_SHIFT_LEFT-->
+    <!--META_SHIFT_LEFT_ON-->
+    <!--<relation>-->
+    <!--<fromName>META_SHIFT_LEFT_ON</fromName>-->
+    <!--<fromValue>0x40</fromValue>-->
+    <!--</relation>-->
+
+    <!--<p>This mask is used to check whether the right SHIFT meta key is pressed.</p> @see #isShiftPressed() @see #getMetaState() @see #KEYCODE_SHIFT_RIGHT-->
+    <!--META_SHIFT_RIGHT_ON-->
+    <!--<relation>-->
+    <!--<fromName>META_SHIFT_RIGHT_ON</fromName>-->
+    <!--<fromValue>0x80</fromValue>-->
+    <!--</relation>-->
+
+    <!--<p>This mask is used to check whether the SYM meta key is pressed.</p> @see #isSymPressed() @see #getMetaState()-->
+    <!--META_SYM_ON-->
+    <!--<relation>-->
+    <!--<fromName>META_SYM_ON</fromName>-->
+    <!--<fromValue>0x4</fromValue>-->
+    <!--</relation>-->
+
+    <!--<p>This mask is used to check whether the FUNCTION meta key is pressed.</p> @see #isFunctionPressed()@see #getMetaState()-->
+    <!--META_FUNCTION_ON-->
+    <!--<relation>-->
+    <!--<fromName>META_FUNCTION_ON</fromName>-->
+    <!--<fromValue>0x8</fromValue>-->
+    <!--</relation>-->
+
+    <!--<p>This mask is used to check whether one of the CTRL meta keys is pressed.</p> @see #isCtrlPressed() @see #getMetaState() @see #KEYCODE_CTRL_LEFT @see #KEYCODE_CTRL_RIGHT-->
+    <!--META_CTRL_ON-->
+    <relation>
+        <fromName>META_CTRL_ON</fromName>
+        <fromValue>0x1000</fromValue>
+        <thruName>Control</thruName>
+    </relation>
+
+    <!--<p>This mask is used to check whether the left CTRL meta key is pressed.</p> @see #isCtrlPressed() @see #getMetaState() @see #KEYCODE_CTRL_LEFT-->
+    <!--META_CTRL_LEFT_ON-->
+    <!--<relation>-->
+    <!--<fromName>META_CTRL_LEFT_ON</fromName>-->
+    <!--<fromValue>0x2000</fromValue>-->
+    <!--</relation>-->
+
+    <!--<p>This mask is used to check whether the right CTRL meta key is pressed.</p> @see #isCtrlPressed() @see #getMetaState() @see #KEYCODE_CTRL_RIGHT-->
+    <!--META_CTRL_RIGHT_ON-->
+    <!--<relation>-->
+    <!--<fromName></fromName>-->
+    <!--<fromValue>0x4000</fromValue>-->
+    <!--</relation>-->
+
+    <!--<p>This mask is used to check whether one of the META meta keys is pressed.</p> @see #isMetaPressed() @see #getMetaState() @see #KEYCODE_META_LEFT @see #KEYCODE_META_RIGHT-->
+    <!--META_META_ON-->
+    <relation>
+        <fromName>META_META_ON</fromName>
+        <fromValue>0x10000</fromValue>
+        <thruName>Meta</thruName>
+    </relation>
+
+    <!--<p>This mask is used to check whether the left META meta key is pressed.</p> @see #isMetaPressed() @see #getMetaState() @see #KEYCODE_META_LEFT-->
+    <!--META_META_LEFT_ON-->
+    <!--<relation>-->
+    <!--<fromName>META_META_LEFT_ON</fromName>-->
+    <!--<fromValue>0x20000</fromValue>-->
+    <!--</relation>-->
+
+    <!--<p>This mask is used to check whether the right META meta key is pressed.</p> @see #isMetaPressed() @see #getMetaState() @see #KEYCODE_META_RIGHT-->
+    <!--META_META_RIGHT_ON-->
+    <!--<relation>-->
+    <!--<fromName>META_META_RIGHT_ON</fromName>-->
+    <!--<fromValue>0x40000</fromValue>-->
+    <!--</relation>-->
+
+    <!--<p>This mask is used to check whether the CAPS LOCK meta key is on.</p> @see #isCapsLockOn() @see #getMetaState() @see #KEYCODE_CAPS_LOCK-->
+    <!--META_CAPS_LOCK_ON-->
+    <relation>
+        <fromName>META_CAPS_LOCK_ON</fromName>
+        <fromValue>0x100000</fromValue>
+        <thruName>Lock</thruName>
+    </relation>
+
+    <!--<p>This mask is used to check whether the NUM LOCK meta key is on.</p> @see #isNumLockOn() @see #getMetaState() @see #KEYCODE_NUM_LOCK-->
+    <!--META_NUM_LOCK_ON-->
+    <!--<relation>-->
+    <!--<fromName>META_NUM_LOCK_ON</fromName>-->
+    <!--<fromValue>0x200000</fromValue>-->
+    <!--</relation>-->
+
+    <!--<p>This mask is used to check whether the SCROLL LOCK meta key is on.</p> @see #isScrollLockOn() @see #getMetaState() @see #KEYCODE_SCROLL_LOCK-->
+    <!--META_SCROLL_LOCK_ON-->
+    <!--<relation>-->
+    <!--<fromName>META_SCROLL_LOCK_ON</fromName>-->
+    <!--<fromValue>0x400000</fromValue>-->
+    <!--</relation>-->
+</relations>

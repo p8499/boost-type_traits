@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="key">
+        <item name="android:background">#ffe3f2fd</item>
+        <item name="android:keyBackground">@drawable/key_kbg</item>
+        <item name="android:keyTextSize">16sp</item>
+        <item name="android:shadowRadius">0</item>
+        <item name="android:keyTextColor">#ffffffff</item>
+        <item name="android:keyPreviewLayout">@null</item>
+    </style>
+</resources>

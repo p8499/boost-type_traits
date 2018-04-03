@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.p8499.lang.ime.ViewInput
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/menu"
+            style="@style/menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/menu_keyboard"
+                style="@style/menucheckable"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:foreground="@drawable/ic_keyboard_grey_24dp"
+                android:padding="12dp"
+                android:textOff="@null"
+                android:textOn="@null"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <android.inputmethodservice.KeyboardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/keyboard"
+        style="@style/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</com.p8499.lang.ime.ViewInput>

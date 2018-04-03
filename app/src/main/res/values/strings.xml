@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">ime</string>
+    <string name="app_name">廣而告之IME</string>
+    <!--<string name="ime_label">Ng Input</string>-->
+    <string name="ime_qwerty">Qwerty</string>
+    <string name="ime_numeric">数字键盘</string>
+    <string name="ime_symbols">Symbols</string>
 </resources>

@@ -1,0 +1,2122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--This file maps android.view.KeyEvent key codes into rime/key_table.cc key codes-->
+<relations>
+    <!--Key code constant: Unknown key code.-->
+    <!--KEYCODE_UNKNOWN-->
+    <relation>
+        <fromName>KEYCODE_UNKNOWN</fromName>
+        <fromValue>0</fromValue>
+        <thruName>VoidSymbol</thruName>
+    </relation>
+
+    <!--Key code constant: Soft Left key. Usually situated below the display on phones and used as a multi-function feature key for selecting a software defined function shown on the bottom left of the display.-->
+    <!--KEYCODE_SOFT_LEFT-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_SOFT_LEFT</fromName>-->
+    <!--<fromValue>1</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Soft Right key. Usually situated below the display on phones and used as a multi-function feature key for selecting a software defined function shown on the bottom right of the display.-->
+    <!--KEYCODE_SOFT_RIGHT-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_SOFT_RIGHT</fromName>-->
+    <!--<fromValue>2</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Home key. This key is handled by the framework and is never delivered to applications.-->
+    <!--KEYCODE_HOME-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_HOME</fromName>-->
+    <!--<fromValue>3</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Back key.-->
+    <!--KEYCODE_BACK-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BACK</fromName>-->
+    <!--<fromValue>4</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Call key.-->
+    <!--KEYCODE_CALL-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_CALL</fromName>-->
+    <!--<fromValue>5</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: End Call key.-->
+    <!--KEYCODE_ENDCALL-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_ENDCALL</fromName>-->
+    <!--<fromValue>6</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: '0' key.-->
+    <!--KEYCODE_0-->
+    <relation>
+        <fromName>KEYCODE_0</fromName>
+        <fromValue>7</fromValue>
+        <thruName>0</thruName>
+    </relation>
+
+    <!--Key code constant: '1' key.-->
+    <!--KEYCODE_1-->
+    <relation>
+        <fromName>KEYCODE_1</fromName>
+        <fromValue>8</fromValue>
+        <thruName>1</thruName>
+    </relation>
+
+    <!--Key code constant: '2' key.-->
+    <!--KEYCODE_2-->
+    <relation>
+        <fromName>KEYCODE_2</fromName>
+        <fromValue>9</fromValue>
+        <thruName>2</thruName>
+    </relation>
+
+    <!--Key code constant: '3' key.-->
+    <!--KEYCODE_3-->
+    <relation>
+        <fromName>KEYCODE_3</fromName>
+        <fromValue>10</fromValue>
+        <thruName>3</thruName>
+    </relation>
+
+    <!--Key code constant: '4' key.-->
+    <!--KEYCODE_4-->
+    <relation>
+        <fromName>KEYCODE_4</fromName>
+        <fromValue>11</fromValue>
+        <thruName>4</thruName>
+    </relation>
+
+    <!--Key code constant: '5' key.-->
+    <!--KEYCODE_5-->
+    <relation>
+        <fromName>KEYCODE_5</fromName>
+        <fromValue>12</fromValue>
+        <thruName>5</thruName>
+    </relation>
+
+    <!--Key code constant: '6' key.-->
+    <!--KEYCODE_6-->
+    <relation>
+        <fromName>KEYCODE_6</fromName>
+        <fromValue>13</fromValue>
+        <thruName>6</thruName>
+    </relation>
+
+    <!--Key code constant: '7' key.-->
+    <!--KEYCODE_7-->
+    <relation>
+        <fromName>KEYCODE_7</fromName>
+        <fromValue>14</fromValue>
+        <thruName>7</thruName>
+    </relation>
+
+    <!--Key code constant: '8' key.-->
+    <!--KEYCODE_8-->
+    <relation>
+        <fromName>KEYCODE_8</fromName>
+        <fromValue>15</fromValue>
+        <thruName>8</thruName>
+    </relation>
+
+    <!--Key code constant: '9' key.-->
+    <!--KEYCODE_9-->
+    <relation>
+        <fromName>KEYCODE_9</fromName>
+        <fromValue>16</fromValue>
+        <thruName>9</thruName>
+    </relation>
+
+    <!--Key code constant: '*' key.-->
+    <!--KEYCODE_STAR-->
+    <relation>
+        <fromName>KEYCODE_STAR</fromName>
+        <fromValue>17</fromValue>
+        <thruName>asterisk</thruName>
+    </relation>
+
+    <!--Key code constant: '#' key.-->
+    <!--KEYCODE_POUND-->
+    <relation>
+        <fromName>KEYCODE_POUND</fromName>
+        <fromValue>18</fromValue>
+        <thruName>numbersign</thruName>
+    </relation>
+
+    <!--Key code constant: Directional Pad Up key. May also be synthesized from trackball motions.-->
+    <!--KEYCODE_DPAD_UP-->
+    <relation>
+        <fromName>KEYCODE_DPAD_UP</fromName>
+        <fromValue>19</fromValue>
+        <thruName>Up</thruName>
+    </relation>
+
+    <!--Key code constant: Directional Pad Down key. May also be synthesized from trackball motions.-->
+    <!--KEYCODE_DPAD_DOWN-->
+    <relation>
+        <fromName>KEYCODE_DPAD_DOWN</fromName>
+        <fromValue>20</fromValue>
+        <thruName>Down</thruName>
+    </relation>
+
+    <!--Key code constant: Directional Pad Left key. May also be synthesized from trackball motions.-->
+    <!--KEYCODE_DPAD_LEFT-->
+    <relation>
+        <fromName>KEYCODE_DPAD_LEFT</fromName>
+        <fromValue>21</fromValue>
+        <thruName>Left</thruName>
+    </relation>
+
+    <!--Key code constant: Directional Pad Right key. May also be synthesized from trackball motions.-->
+    <!--KEYCODE_DPAD_RIGHT-->
+    <relation>
+        <fromName>KEYCODE_DPAD_RIGHT</fromName>
+        <fromValue>22</fromValue>
+        <thruName>Right</thruName>
+    </relation>
+
+    <!--Key code constant: Directional Pad Center key. May also be synthesized from trackball motions.-->
+    <!--KEYCODE_DPAD_CENTER-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_DPAD_CENTER</fromName>-->
+    <!--<fromValue>23</fromValue>-->
+    <!--<thruName>KP_Begin"</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Volume Up key. Adjusts the speaker volume up.-->
+    <!--KEYCODE_VOLUME_UP-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_VOLUME_UP</fromName>-->
+    <!--<fromValue>24</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Volume Down key. Adjusts the speaker volume down.-->
+    <!--KEYCODE_VOLUME_DOWN-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_VOLUME_DOWN</fromName>-->
+    <!--<fromValue>25</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Power key.-->
+    <!--KEYCODE_POWER-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_POWER</fromName>-->
+    <!--<fromValue>26</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Camera key. Used to launch a camera application or take pictures.-->
+    <!--KEYCODE_CAMERA-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_CAMERA</fromName>-->
+    <!--<fromValue>27</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Clear key.-->
+    <!--KEYCODE_CLEAR-->
+    <relation>
+        <fromName>KEYCODE_CLEAR</fromName>
+        <fromValue>28</fromValue>
+        <thruName>Clear</thruName>
+    </relation>
+
+    <!--Key code constant: 'A' key.-->
+    <!--KEYCODE_A-->
+    <relation>
+        <fromName>KEYCODE_A</fromName>
+        <fromValue>29</fromValue>
+        <thruName>a</thruName>
+    </relation>
+
+    <!--Key code constant: 'B' key.-->
+    <!--KEYCODE_B-->
+    <relation>
+        <fromName>KEYCODE_B</fromName>
+        <fromValue>30</fromValue>
+        <thruName>b</thruName>
+    </relation>
+
+    <!--Key code constant: 'C' key.-->
+    <!--KEYCODE_C-->
+    <relation>
+        <fromName>KEYCODE_C</fromName>
+        <fromValue>31</fromValue>
+        <thruName>c</thruName>
+    </relation>
+
+    <!--Key code constant: 'D' key.-->
+    <!--KEYCODE_D-->
+    <relation>
+        <fromName>KEYCODE_D</fromName>
+        <fromValue>32</fromValue>
+        <thruName>d</thruName>
+    </relation>
+
+    <!--Key code constant: 'E' key.-->
+    <!--KEYCODE_E-->
+    <relation>
+        <fromName>KEYCODE_E</fromName>
+        <fromValue>33</fromValue>
+        <thruName>e</thruName>
+    </relation>
+
+    <!--Key code constant: 'F' key.-->
+    <!--KEYCODE_F-->
+    <relation>
+        <fromName>KEYCODE_F</fromName>
+        <fromValue>34</fromValue>
+        <thruName>f</thruName>
+    </relation>
+
+    <!--Key code constant: 'G' key.-->
+    <!--KEYCODE_G-->
+    <relation>
+        <fromName>KEYCODE_G</fromName>
+        <fromValue>35</fromValue>
+        <thruName>g</thruName>
+    </relation>
+
+    <!--Key code constant: 'H' key.-->
+    <!--KEYCODE_H-->
+    <relation>
+        <fromName>KEYCODE_H</fromName>
+        <fromValue>36</fromValue>
+        <thruName>h</thruName>
+    </relation>
+
+    <!--Key code constant: 'I' key.-->
+    <!--KEYCODE_I-->
+    <relation>
+        <fromName>KEYCODE_I</fromName>
+        <fromValue>37</fromValue>
+        <thruName>i</thruName>
+    </relation>
+
+    <!--Key code constant: 'J' key.-->
+    <!--KEYCODE_J-->
+    <relation>
+        <fromName>KEYCODE_J</fromName>
+        <fromValue>38</fromValue>
+        <thruName>j</thruName>
+    </relation>
+
+    <!--Key code constant: 'K' key.-->
+    <!--KEYCODE_K-->
+    <relation>
+        <fromName>KEYCODE_K</fromName>
+        <fromValue>39</fromValue>
+        <thruName>k</thruName>
+    </relation>
+
+    <!--Key code constant: 'L' key.-->
+    <!--KEYCODE_L-->
+    <relation>
+        <fromName>KEYCODE_L</fromName>
+        <fromValue>40</fromValue>
+        <thruName>l</thruName>
+    </relation>
+
+    <!--Key code constant: 'M' key.-->
+    <!--KEYCODE_M-->
+    <relation>
+        <fromName>KEYCODE_M</fromName>
+        <fromValue>41</fromValue>
+        <thruName>m</thruName>
+    </relation>
+
+    <!--Key code constant: 'N' key.-->
+    <!--KEYCODE_N-->
+    <relation>
+        <fromName>KEYCODE_N</fromName>
+        <fromValue>42</fromValue>
+        <thruName>n</thruName>
+    </relation>
+
+    <!--Key code constant: 'O' key.-->
+    <!--KEYCODE_O-->
+    <relation>
+        <fromName>KEYCODE_O</fromName>
+        <fromValue>43</fromValue>
+        <thruName>o</thruName>
+    </relation>
+
+    <!--Key code constant: 'P' key.-->
+    <!--KEYCODE_P-->
+    <relation>
+        <fromName>KEYCODE_P</fromName>
+        <fromValue>44</fromValue>
+        <thruName>p</thruName>
+    </relation>
+
+    <!--Key code constant: 'Q' key.-->
+    <!--KEYCODE_Q-->
+    <relation>
+        <fromName>KEYCODE_Q</fromName>
+        <fromValue>45</fromValue>
+        <thruName>q</thruName>
+    </relation>
+
+    <!--Key code constant: 'R' key.-->
+    <!--KEYCODE_R-->
+    <relation>
+        <fromName>KEYCODE_R</fromName>
+        <fromValue>46</fromValue>
+        <thruName>r</thruName>
+    </relation>
+
+    <!--Key code constant: 'S' key.-->
+    <!--KEYCODE_S-->
+    <relation>
+        <fromName>KEYCODE_S</fromName>
+        <fromValue>47</fromValue>
+        <thruName>s</thruName>
+    </relation>
+
+    <!--Key code constant: 'T' key.-->
+    <!--KEYCODE_T-->
+    <relation>
+        <fromName>KEYCODE_T</fromName>
+        <fromValue>48</fromValue>
+        <thruName>t</thruName>
+    </relation>
+
+    <!--Key code constant: 'U' key.-->
+    <!--KEYCODE_U-->
+    <relation>
+        <fromName>KEYCODE_U</fromName>
+        <fromValue>49</fromValue>
+        <thruName>u</thruName>
+    </relation>
+
+    <!--Key code constant: 'V' key.-->
+    <!--KEYCODE_V-->
+    <relation>
+        <fromName>KEYCODE_V</fromName>
+        <fromValue>50</fromValue>
+        <thruName>v</thruName>
+    </relation>
+
+    <!--Key code constant: 'W' key.-->
+    <!--KEYCODE_W-->
+    <relation>
+        <fromName>KEYCODE_W</fromName>
+        <fromValue>51</fromValue>
+        <thruName>w</thruName>
+    </relation>
+
+    <!--Key code constant: 'X' key.-->
+    <!--KEYCODE_X-->
+    <relation>
+        <fromName>KEYCODE_X</fromName>
+        <fromValue>52</fromValue>
+        <thruName>x</thruName>
+    </relation>
+
+    <!--Key code constant: 'Y' key.-->
+    <!--KEYCODE_Y-->
+    <relation>
+        <fromName>KEYCODE_Y</fromName>
+        <fromValue>53</fromValue>
+        <thruName>y</thruName>
+    </relation>
+
+    <!--Key code constant: 'Z' key.-->
+    <!--KEYCODE_Z-->
+    <relation>
+        <fromName>KEYCODE_Z</fromName>
+        <fromValue>54</fromValue>
+        <thruName>z</thruName>
+    </relation>
+
+    <!--Key code constant: ',' key.-->
+    <!--KEYCODE_COMMA-->
+    <relation>
+        <fromName>KEYCODE_COMMA</fromName>
+        <fromValue>55</fromValue>
+        <thruName>comma</thruName>
+    </relation>
+
+    <!--Key code constant: '.' key.-->
+    <!--KEYCODE_PERIOD-->
+    <relation>
+        <fromName>KEYCODE_PERIOD</fromName>
+        <fromValue>56</fromValue>
+        <thruName>period</thruName>
+    </relation>
+
+    <!--Key code constant: Left Alt modifier key.-->
+    <!--KEYCODE_ALT_LEFT-->
+    <relation>
+        <fromName>KEYCODE_ALT_LEFT</fromName>
+        <fromValue>57</fromValue>
+        <thruName>Alt_L</thruName>
+    </relation>
+
+    <!--Key code constant: Right Alt modifier key.-->
+    <!--KEYCODE_ALT_RIGHT-->
+    <relation>
+        <fromName>KEYCODE_ALT_RIGHT</fromName>
+        <fromValue>58</fromValue>
+        <thruName>Alt_R</thruName>
+    </relation>
+
+    <!--Key code constant: Left Shift modifier key.-->
+    <!--KEYCODE_SHIFT_LEFT-->
+    <relation>
+        <fromName>KEYCODE_SHIFT_LEFT</fromName>
+        <fromValue>59</fromValue>
+        <thruName>Shift_L</thruName>
+    </relation>
+
+    <!--Key code constant: Right Shift modifier key.-->
+    <!--KEYCODE_SHIFT_RIGHT-->
+    <relation>
+        <fromName>KEYCODE_SHIFT_RIGHT</fromName>
+        <fromValue>60</fromValue>
+        <thruName>Shift_R</thruName>
+    </relation>
+
+    <!--Key code constant: Tab key.-->
+    <!--KEYCODE_TAB-->
+    <relation>
+        <fromName>KEYCODE_TAB</fromName>
+        <fromValue>61</fromValue>
+        <thruName>Tab</thruName>
+    </relation>
+
+    <!--Key code constant: Space key.-->
+    <!--KEYCODE_SPACE-->
+    <relation>
+        <fromName>KEYCODE_SPACE</fromName>
+        <fromValue>62</fromValue>
+        <thruName>space</thruName>
+    </relation>
+
+    <!--Key code constant: Symbol modifier key. Used to enter alternate symbols.-->
+    <!--KEYCODE_SYM-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_SYM</fromName>-->
+    <!--<fromValue>63</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Explorer special function key. Used to launch a browser application.-->
+    <!--KEYCODE_EXPLORER-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_EXPLORER</fromName>-->
+    <!--<fromValue>64</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Envelope special function key. Used to launch a mail application.-->
+    <!--KEYCODE_ENVELOPE-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_ENVELOPE</fromName>-->
+    <!--<fromValue>65</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Enter key.-->
+    <!--KEYCODE_ENTER-->
+    <relation>
+        <fromName>KEYCODE_ENTER</fromName>
+        <fromValue>66</fromValue>
+        <thruName>Return</thruName>
+    </relation>
+
+    <!--Key code constant: Backspace key. Deletes characters before the insertion point, unlike {@link #KEYCODE_FORWARD_DEL}.-->
+    <!--KEYCODE_DEL-->
+    <relation>
+        <fromName>KEYCODE_DEL</fromName>
+        <fromValue>67</fromValue>
+        <thruName>BackSpace</thruName>
+    </relation>
+
+    <!--Key code constant: '`' (backtick) key.-->
+    <!--KEYCODE_GRAVE-->
+    <relation>
+        <fromName>KEYCODE_GRAVE</fromName>
+        <fromValue>68</fromValue>
+        <thruName>grave</thruName>
+    </relation>
+
+    <!--Key code constant: '-'.-->
+    <!--KEYCODE_MINUS-->
+    <relation>
+        <fromName>KEYCODE_MINUS</fromName>
+        <fromValue>69</fromValue>
+        <thruName>minus</thruName>
+    </relation>
+
+    <!--Key code constant: '=' key.-->
+    <!--KEYCODE_EQUALS-->
+    <relation>
+        <fromName>KEYCODE_EQUALS</fromName>
+        <fromValue>70</fromValue>
+        <thruName>equal</thruName>
+    </relation>
+
+    <!--Key code constant: '[' key.-->
+    <!--KEYCODE_LEFT_BRACKET-->
+    <relation>
+        <fromName>androidName</fromName>
+        <fromValue>71</fromValue>
+        <thruName>bracketleft</thruName>
+    </relation>
+
+    <!--Key code constant: ']' key.-->
+    <!--KEYCODE_RIGHT_BRACKET-->
+    <relation>
+        <fromName>KEYCODE_RIGHT_BRACKET</fromName>
+        <fromValue>72</fromValue>
+        <thruName>bracketright</thruName>
+    </relation>
+
+    <!--Key code constant: '\' key.-->
+    <!--KEYCODE_BACKSLASH-->
+    <relation>
+        <fromName>KEYCODE_BACKSLASH</fromName>
+        <fromValue>73</fromValue>
+        <thruName>backslash</thruName>
+    </relation>
+
+    <!--Key code constant: ':' key.-->
+    <!--KEYCODE_SEMICOLON-->
+    <relation>
+        <fromName>KEYCODE_SEMICOLON</fromName>
+        <fromValue>74</fromValue>
+        <thruName>semicolon</thruName>
+    </relation>
+
+    <!--Key code constant: ''' (apostrophe) key.-->
+    <!--KEYCODE_APOSTROPHE-->
+    <relation>
+        <fromName>KEYCODE_APOSTROPHE</fromName>
+        <fromValue>75</fromValue>
+        <thruName>apostrophe</thruName>
+    </relation>
+
+    <!--Key code constant: '/' key.-->
+    <!--KEYCODE_SLASH-->
+    <relation>
+        <fromName>KEYCODE_SLASH</fromName>
+        <fromValue>76</fromValue>
+        <thruName>slash</thruName>
+    </relation>
+
+    <!--Key code constant: '@' key.-->
+    <!--KEYCODE_AT-->
+    <relation>
+        <fromName>KEYCODE_AT</fromName>
+        <fromValue>77</fromValue>
+        <thruName>at</thruName>
+    </relation>
+
+    <!--Key code constant: Number modifier key. Used to enter numeric symbols. This key is not Num Lock: it is more like {@link #KEYCODE_ALT_LEFT} and is interpreted as an ALT key by {@link android.text.method.MetaKeyKeyListener}.-->
+    <!--KEYCODE_NUM-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_NUM</fromName>-->
+    <!--<fromValue>78</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Headset Hook key. Used to hang up calls and stop media.-->
+    <!--KEYCODE_HEADSETHOOK-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_HEADSETHOOK</fromName>-->
+    <!--<fromValue>79</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Camera Focus key. Used to focus the camera.-->
+    <!--KEYCODE_FOCUS-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_FOCUS</fromName>-->
+    <!--<fromValue>80</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: '+' key.-->
+    <!--KEYCODE_PLUS-->
+    <relation>
+        <fromName>KEYCODE_PLUS</fromName>
+        <fromValue>81</fromValue>
+        <thruName>plus</thruName>
+    </relation>
+
+    <!--Key code constant: Menu key.-->
+    <!--KEYCODE_MENU-->
+    <relation>
+        <fromName>KEYCODE_MENU</fromName>
+        <fromValue>82</fromValue>
+        <thruName>Menu</thruName>
+    </relation>
+
+    <!--Key code constant: Notification key.-->
+    <!--KEYCODE_NOTIFICATION-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_NOTIFICATION</fromName>-->
+    <!--<fromValue>83</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Search key.-->
+    <!--KEYCODE_SEARCH-->
+    <relation>
+        <fromName>KEYCODE_SEARCH</fromName>
+        <fromValue>84</fromValue>
+        <thruName>Find</thruName>
+    </relation>
+
+    <!--Key code constant: Play/Pause media key.-->
+    <!--KEYCODE_MEDIA_PLAY_PAUSE-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_MEDIA_PLAY_PAUSE</fromName>-->
+    <!--<fromValue>85</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Stop media key.-->
+    <!--KEYCODE_MEDIA_STOP-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_MEDIA_STOP</fromName>-->
+    <!--<fromValue>86</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Play Next media key.-->
+    <!--KEYCODE_MEDIA_NEXT-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_MEDIA_NEXT</fromName>-->
+    <!--<fromValue>87</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Play Previous media key.-->
+    <!--KEYCODE_MEDIA_PREVIOUS-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_MEDIA_PREVIOUS</fromName>-->
+    <!--<fromValue>88</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Rewind media key.-->
+    <!--KEYCODE_MEDIA_REWIND-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_MEDIA_REWIND</fromName>-->
+    <!--<fromValue>89</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Fast Forward media key.-->
+    <!--KEYCODE_MEDIA_FAST_FORWARD-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_MEDIA_FAST_FORWARD</fromName>-->
+    <!--<fromValue>90</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Mute key. Mutes the microphone, unlike {@link #KEYCODE_VOLUME_MUTE}.-->
+    <!--KEYCODE_MUTE-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_MUTE</fromName>-->
+    <!--<fromValue>91</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Page Up key.-->
+    <!--KEYCODE_PAGE_UP-->
+    <relation>
+        <fromName>KEYCODE_PAGE_UP</fromName>
+        <fromValue>92</fromValue>
+        <thruName>Page_Up</thruName>
+    </relation>
+
+    <!--Key code constant: Page Down key.-->
+    <!--KEYCODE_PAGE_DOWN-->
+    <relation>
+        <fromName>KEYCODE_PAGE_DOWN</fromName>
+        <fromValue>93</fromValue>
+        <thruName>Page_Down</thruName>
+    </relation>
+
+    <!--Key code constant: Picture Symbols modifier key. Used to switch symbol sets (Emoji, Kao-moji).-->
+    <!--KEYCODE_PICTSYMBOLS-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_PICTSYMBOLS</fromName>-->
+    <!--<fromValue>94</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Switch Charset modifier key. Used to switch character sets (Kanji, Katakana).-->
+    <!--KEYCODE_SWITCH_CHARSET-->
+    <relation>
+        <fromName>KEYCODE_SWITCH_CHARSET</fromName>
+        <fromValue>95</fromValue>
+        <thruName>Mode_switch</thruName>
+    </relation>
+
+    <!--Key code constant: A Button key. On a game controller, the A button should be either the button labeled A or the first button on the bottom row of controller buttons.-->
+    <!--KEYCODE_BUTTON_A-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_A</fromName>-->
+    <!--<fromValue>96</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: B Button key. On a game controller, the B button should be either the button labeled B or the second button on the bottom row of controller buttons.-->
+    <!--KEYCODE_BUTTON_B-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_B</fromName>-->
+    <!--<fromValue>97</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: C Button key. On a game controller, the C button should be either the button labeled C or the third button on the bottom row of controller buttons.-->
+    <!--KEYCODE_BUTTON_C-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_C</fromName>-->
+    <!--<fromValue>98</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: X Button key. On a game controller, the X button should be either the button labeled X or the first button on the upper row of controller buttons.-->
+    <!--KEYCODE_BUTTON_X-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_X</fromName>-->
+    <!--<fromValue>99</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Y Button key. On a game controller, the Y button should be either the button labeled Y or the second button on the upper row of controller buttons.-->
+    <!--KEYCODE_BUTTON_Y-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_Y</fromName>-->
+    <!--<fromValue>100</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Z Button key. On a game controller, the Z button should be either the button labeled Z or the third button on the upper row of controller buttons.-->
+    <!--KEYCODE_BUTTON_Z-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_Z</fromName>-->
+    <!--<fromValue>101</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: L1 Button key. On a game controller, the L1 button should be either the button labeled L1 (or L) or the top left trigger button.-->
+    <!--KEYCODE_BUTTON_L1-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_L1</fromName>-->
+    <!--<fromValue>102</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: R1 Button key. On a game controller, the R1 button should be either the button labeled R1 (or R) or the top right trigger button.-->
+    <!--KEYCODE_BUTTON_R1-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_R1</fromName>-->
+    <!--<fromValue>103</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: L2 Button key. On a game controller, the L2 button should be either the button labeled L2 or the bottom left trigger button.-->
+    <!--KEYCODE_BUTTON_L2-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_L2</fromName>-->
+    <!--<fromValue>104</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: R2 Button key. On a game controller, the R2 button should be either the button labeled R2 or the bottom right trigger button.-->
+    <!--KEYCODE_BUTTON_R2-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_R2</fromName>-->
+    <!--<fromValue>105</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Left Thumb Button key. On a game controller, the left thumb button indicates that the left (or only)joystick is pressed.-->
+    <!--KEYCODE_BUTTON_THUMBL-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_THUMBL</fromName>-->
+    <!--<fromValue>106</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Right Thumb Button key. On a game controller, the right thumb button indicates that the right joystick is pressed.-->
+    <!--KEYCODE_BUTTON_THUMBR-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_THUMBR</fromName>-->
+    <!--<fromValue>107</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Start Button key. On a game controller, the button labeled Start.-->
+    <!--KEYCODE_BUTTON_START-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_START</fromName>-->
+    <!--<fromValue>108</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Select Button key. On a game controller, the button labeled Select.-->
+    <!--KEYCODE_BUTTON_SELECT-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_SELECT</fromName>-->
+    <!--<fromValue>109</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Mode Button key. On a game controller, the button labeled Mode.-->
+    <!--KEYCODE_BUTTON_MODE-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_MODE</fromName>-->
+    <!--<fromValue>110</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Escape key.-->
+    <!--KEYCODE_ESCAPE-->
+    <relation>
+        <fromName>KEYCODE_ESCAPE</fromName>
+        <fromValue>111</fromValue>
+        <thruName>Escape</thruName>
+    </relation>
+
+    <!--Key code constant: Forward Delete key. Deletes characters ahead of the insertion point, unlike {@link #KEYCODE_DEL}.-->
+    <!--KEYCODE_FORWARD_DEL-->
+    <relation>
+        <fromName>KEYCODE_FORWARD_DEL</fromName>
+        <fromValue>112</fromValue>
+        <thruName>Delete</thruName>
+    </relation>
+
+    <!--Key code constant: Left Control modifier key.-->
+    <!--KEYCODE_CTRL_LEFT-->
+    <relation>
+        <fromName>KEYCODE_CTRL_LEFT</fromName>
+        <fromValue>113</fromValue>
+        <thruName>Control_L</thruName>
+    </relation>
+
+    <!--Key code constant: Right Control modifier key.-->
+    <!--KEYCODE_CTRL_RIGHT-->
+    <relation>
+        <fromName>KEYCODE_CTRL_RIGHT</fromName>
+        <fromValue>114</fromValue>
+        <thruName>Control_R</thruName>
+    </relation>
+
+    <!--Key code constant: Caps Lock key.-->
+    <!--KEYCODE_CAPS_LOCK-->
+    <relation>
+        <fromName>KEYCODE_CAPS_LOCK</fromName>
+        <fromValue>115</fromValue>
+        <thruName>Caps_Lock</thruName>
+    </relation>
+
+    <!--Key code constant: Scroll Lock key.-->
+    <!--KEYCODE_SCROLL_LOCK-->
+    <relation>
+        <fromName>KEYCODE_SCROLL_LOCK</fromName>
+        <fromValue>116</fromValue>
+        <thruName>Scroll_Lock</thruName>
+    </relation>
+
+    <!--Key code constant: Left Meta modifier key.-->
+    <!--KEYCODE_META_LEFT-->
+    <relation>
+        <fromName>KEYCODE_META_LEFT</fromName>
+        <fromValue>117</fromValue>
+        <thruName>Meta_L</thruName>
+    </relation>
+
+    <!--Key code constant: Right Meta modifier key.-->
+    <!--KEYCODE_META_RIGHT-->
+    <relation>
+        <fromName>KEYCODE_META_RIGHT</fromName>
+        <fromValue>118</fromValue>
+        <thruName>Meta_R</thruName>
+    </relation>
+
+    <!--Key code constant: Function modifier key.-->
+    <!--KEYCODE_FUNCTION-->
+    <relation>
+        <fromName>KEYCODE_FUNCTION</fromName>
+        <fromValue>119</fromValue>
+        <thruName>function</thruName>
+    </relation>
+
+    <!--Key code constant: System Request / Print Screen key.-->
+    <!--KEYCODE_SYSRQ-->
+    <relation>
+        <fromName>KEYCODE_SYSRQ</fromName>
+        <fromValue>120</fromValue>
+        <thruName>Sys_Req</thruName>
+    </relation>
+
+    <!--Key code constant: Break / Pause key.-->
+    <!--KEYCODE_BREAK-->
+    <relation>
+        <fromName>KEYCODE_BREAK</fromName>
+        <fromValue>121</fromValue>
+        <thruName>Pause</thruName>
+    </relation>
+
+    <!--Key code constant: Home Movement key. Used for scrolling or moving the cursor around to the start of a line or to the top of a list.-->
+    <!--KEYCODE_MOVE_HOME-->
+    <relation>
+        <fromName>KEYCODE_MOVE_HOME</fromName>
+        <fromValue>122</fromValue>
+        <thruName>Home</thruName>
+    </relation>
+
+    <!--Key code constant: End Movement key. Used for scrolling or moving the cursor around to the end of a line or to the bottom of a list.-->
+    <!--KEYCODE_MOVE_END-->
+    <relation>
+        <fromName>KEYCODE_MOVE_END</fromName>
+        <fromValue>123</fromValue>
+        <thruName>End</thruName>
+    </relation>
+
+    <!--Key code constant: Insert key. Toggles insert / overwrite edit mode.-->
+    <!--KEYCODE_INSERT-->
+    <relation>
+        <fromName>KEYCODE_INSERT</fromName>
+        <fromValue>124</fromValue>
+        <thruName>Insert</thruName>
+    </relation>
+
+    <!--Key code constant: Forward key. Navigates forward in the history stack.  Complement of {@link #KEYCODE_BACK}.-->
+    <!--KEYCODE_FORWARD-->
+    <relation>
+        <fromName>KEYCODE_FORWARD</fromName>
+        <fromValue>125</fromValue>
+        <thruName>Next</thruName>
+    </relation>
+
+    <!--Key code constant: Play media key.-->
+    <!--KEYCODE_MEDIA_PLAY-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_MEDIA_PLAY</fromName>-->
+    <!--<fromValue>126</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Pause media key.-->
+    <!--KEYCODE_MEDIA_PAUSE-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_MEDIA_PAUSE</fromName>-->
+    <!--<fromValue>127</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Close media key. May be used to close a CD tray, for example.-->
+    <!--KEYCODE_MEDIA_CLOSE-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_MEDIA_CLOSE</fromName>-->
+    <!--<fromValue>128</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Eject media key. May be used to eject a CD tray, for example.-->
+    <!--KEYCODE_MEDIA_EJECT-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_MEDIA_EJECT</fromName>-->
+    <!--<fromValue>129</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Record media key.-->
+    <!--KEYCODE_MEDIA_RECORD-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_MEDIA_RECORD</fromName>-->
+    <!--<fromValue>130</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: F1 key.-->
+    <!--KEYCODE_F1-->
+    <relation>
+        <fromName>KEYCODE_F1</fromName>
+        <fromValue>131</fromValue>
+        <thruName>F1</thruName>
+    </relation>
+
+    <!--Key code constant: F2 key.-->
+    <!--KEYCODE_F2-->
+    <relation>
+        <fromName>KEYCODE_F2</fromName>
+        <fromValue>132</fromValue>
+        <thruName>F2</thruName>
+    </relation>
+
+    <!--Key code constant: F3 key.-->
+    <!--KEYCODE_F3-->
+    <relation>
+        <fromName>KEYCODE_F3</fromName>
+        <fromValue>133</fromValue>
+        <thruName>F3</thruName>
+    </relation>
+
+    <!--Key code constant: F4 key.-->
+    <!--KEYCODE_F4-->
+    <relation>
+        <fromName>KEYCODE_F4</fromName>
+        <fromValue>134</fromValue>
+        <thruName>F4</thruName>
+    </relation>
+
+    <!--Key code constant: F5 key.-->
+    <!--KEYCODE_F5-->
+    <relation>
+        <fromName>KEYCODE_F5</fromName>
+        <fromValue>135</fromValue>
+        <thruName>F5</thruName>
+    </relation>
+
+    <!--Key code constant: F6 key.-->
+    <!--KEYCODE_F6-->
+    <relation>
+        <fromName>KEYCODE_F6</fromName>
+        <fromValue>136</fromValue>
+        <thruName>F6</thruName>
+    </relation>
+
+    <!--Key code constant: F7 key.-->
+    <!--KEYCODE_F7-->
+    <relation>
+        <fromName>KEYCODE_F7</fromName>
+        <fromValue>137</fromValue>
+        <thruName>F7</thruName>
+    </relation>
+
+    <!--Key code constant: F8 key.-->
+    <!--KEYCODE_F8-->
+    <relation>
+        <fromName>KEYCODE_F8</fromName>
+        <fromValue>138</fromValue>
+        <thruName>F8</thruName>
+    </relation>
+
+    <!--Key code constant: F9 key.-->
+    <!--KEYCODE_F9-->
+    <relation>
+        <fromName>KEYCODE_F9</fromName>
+        <fromValue>139</fromValue>
+        <thruName>F9</thruName>
+    </relation>
+
+    <!--Key code constant: F10 key.-->
+    <!--KEYCODE_F10-->
+    <relation>
+        <fromName>KEYCODE_F10</fromName>
+        <fromValue>140</fromValue>
+        <thruName>F10</thruName>
+    </relation>
+
+    <!--Key code constant: F11 key.-->
+    <!--KEYCODE_F11-->
+    <relation>
+        <fromName>KEYCODE_F11</fromName>
+        <fromValue>141</fromValue>
+        <thruName>F11</thruName>
+    </relation>
+
+    <!--Key code constant: F12 key.-->
+    <!--KEYCODE_F12-->
+    <relation>
+        <fromName>KEYCODE_F12</fromName>
+        <fromValue>142</fromValue>
+        <thruName>F12</thruName>
+    </relation>
+
+    <!--Key code constant: Num Lock key. This is the Num Lock key: it is different from {@link #KEYCODE_NUM}. This key alters the behavior of other keys on the numeric keypad.-->
+    <!--KEYCODE_NUM_LOCK-->
+    <relation>
+        <fromName>KEYCODE_NUM_LOCK</fromName>
+        <fromValue>143</fromValue>
+        <thruName>Num_Lock</thruName>
+    </relation>
+
+    <!--Key code constant: Numeric keypad '0' key.-->
+    <!--KEYCODE_NUMPAD_0-->
+    <relation>
+        <fromName>KEYCODE_NUMPAD_0</fromName>
+        <fromValue>144</fromValue>
+        <thruName>KP_0</thruName>
+    </relation>
+
+    <!--Key code constant: Numeric keypad '1' key.-->
+    <!--KEYCODE_NUMPAD_1-->
+    <relation>
+        <fromName>KEYCODE_NUMPAD_1</fromName>
+        <fromValue>145</fromValue>
+        <thruName>KP_1</thruName>
+    </relation>
+
+    <!--Key code constant: Numeric keypad '2' key.-->
+    <!--KEYCODE_NUMPAD_2-->
+    <relation>
+        <fromName>KEYCODE_NUMPAD_2</fromName>
+        <fromValue>146</fromValue>
+        <thruName>KP_2</thruName>
+    </relation>
+
+    <!--Key code constant: Numeric keypad '3' key.-->
+    <!--KEYCODE_NUMPAD_3-->
+    <relation>
+        <fromName>KEYCODE_NUMPAD_3</fromName>
+        <fromValue>147</fromValue>
+        <thruName>KP_3</thruName>
+    </relation>
+
+    <!--Key code constant: Numeric keypad '4' key.-->
+    <!--KEYCODE_NUMPAD_4-->
+    <relation>
+        <fromName>KEYCODE_NUMPAD_4</fromName>
+        <fromValue>148</fromValue>
+        <thruName>KP_4</thruName>
+    </relation>
+
+    <!--Key code constant: Numeric keypad '5' key.-->
+    <!--KEYCODE_NUMPAD_5-->
+    <relation>
+        <fromName>KEYCODE_NUMPAD_5</fromName>
+        <fromValue>149</fromValue>
+        <thruName>KP_5</thruName>
+    </relation>
+
+    <!--Key code constant: Numeric keypad '6' key.-->
+    <!--KEYCODE_NUMPAD_6-->
+    <relation>
+        <fromName>KEYCODE_NUMPAD_6</fromName>
+        <fromValue>150</fromValue>
+        <thruName>KP_6</thruName>
+    </relation>
+
+    <!--Key code constant: Numeric keypad '7' key.-->
+    <!--KEYCODE_NUMPAD_7-->
+    <relation>
+        <fromName>KEYCODE_NUMPAD_7</fromName>
+        <fromValue>151</fromValue>
+        <thruName>KP_7</thruName>
+    </relation>
+
+    <!--Key code constant: Numeric keypad '8' key.-->
+    <!--KEYCODE_NUMPAD_8-->
+    <relation>
+        <fromName>KEYCODE_NUMPAD_8</fromName>
+        <fromValue>152</fromValue>
+        <thruName>KP_8</thruName>
+    </relation>
+
+    <!--Key code constant: Numeric keypad '9' key.-->
+    <!--KEYCODE_NUMPAD_9-->
+    <relation>
+        <fromName>KEYCODE_NUMPAD_9</fromName>
+        <fromValue>153</fromValue>
+        <thruName>KP_9</thruName>
+    </relation>
+
+    <!--Key code constant: Numeric keypad '/' key (for division).-->
+    <!--KEYCODE_NUMPAD_DIVIDE-->
+    <relation>
+        <fromName>KEYCODE_NUMPAD_DIVIDE</fromName>
+        <fromValue>154</fromValue>
+        <thruName>KP_Divide</thruName>
+    </relation>
+
+    <!--Key code constant: Numeric keypad '*' key (for multiplication).-->
+    <!--KEYCODE_NUMPAD_MULTIPLY-->
+    <relation>
+        <fromName>KEYCODE_NUMPAD_MULTIPLY</fromName>
+        <fromValue>155</fromValue>
+        <thruName>KP_Multiply</thruName>
+    </relation>
+
+    <!--Key code constant: Numeric keypad '-' key (for subtraction).-->
+    <!--KEYCODE_NUMPAD_SUBTRACT-->
+    <relation>
+        <fromName>KEYCODE_NUMPAD_SUBTRACT</fromName>
+        <fromValue>156</fromValue>
+        <thruName>KP_Subtract</thruName>
+    </relation>
+
+    <!--Key code constant: Numeric keypad '+' key (for addition).-->
+    <!--KEYCODE_NUMPAD_ADD-->
+    <relation>
+        <fromName>KEYCODE_NUMPAD_ADD</fromName>
+        <fromValue>157</fromValue>
+        <thruName>KP_Add</thruName>
+    </relation>
+
+    <!--Key code constant: Numeric keypad '.' key (for decimals or digit grouping).-->
+    <!--KEYCODE_NUMPAD_DOT-->
+    <relation>
+        <fromName>KEYCODE_NUMPAD_DOT</fromName>
+        <fromValue>158</fromValue>
+        <thruName>KP_Decimal</thruName>
+    </relation>
+
+    <!--Key code constant: Numeric keypad ',' key (for decimals or digit grouping).-->
+    <!--KEYCODE_NUMPAD_COMMA-->
+    <relation>
+        <fromName>KEYCODE_NUMPAD_COMMA</fromName>
+        <fromValue>159</fromValue>
+        <thruName>KP_Separator</thruName>
+    </relation>
+
+    <!--Key code constant: Numeric keypad Enter key.-->
+    <!--KEYCODE_NUMPAD_ENTER-->
+    <relation>
+        <fromName>KEYCODE_NUMPAD_ENTER</fromName>
+        <fromValue>160</fromValue>
+        <thruName>KP_Enter</thruName>
+    </relation>
+
+    <!--Key code constant: Numeric keypad '#' key.-->
+    <!--KEYCODE_NUMPAD_EQUALS-->
+    <relation>
+        <fromName>KEYCODE_NUMPAD_EQUALS</fromName>
+        <fromValue>161</fromValue>
+        <thruName>KP_Equal</thruName>
+    </relation>
+
+    <!--Key code constant: Numeric keypad '(' key.-->
+    <!--KEYCODE_NUMPAD_LEFT_PAREN-->
+    <relation>
+        <fromName>KEYCODE_NUMPAD_LEFT_PAREN</fromName>
+        <fromValue>162</fromValue>
+        <thruName>parenleft</thruName>
+    </relation>
+
+    <!--Key code constant: Numeric keypad ')' key.-->
+    <!--KEYCODE_NUMPAD_RIGHT_PAREN-->
+    <relation>
+        <fromName>KEYCODE_NUMPAD_RIGHT_PAREN</fromName>
+        <fromValue>163</fromValue>
+        <thruName>parenright</thruName>
+    </relation>
+
+    <!--Key code constant: Volume Mute key. Mutes the speaker, unlike {@link #KEYCODE_MUTE}. This key should normally be implemented as a toggle such that the first press mutes the speaker and the second press restores the original volume.-->
+    <!--KEYCODE_VOLUME_MUTE-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_VOLUME_MUTE</fromName>-->
+    <!--<fromValue>164</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Info key. Common on TV remotes to show additional information related to what is currently being viewed.-->
+    <!--KEYCODE_INFO-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_INFO</fromName>-->
+    <!--<fromValue>165</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Channel up key. On TV remotes, increments the television channel.-->
+    <!--KEYCODE_CHANNEL_UP-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_CHANNEL_UP</fromName>-->
+    <!--<fromValue>166</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Channel down key. On TV remotes, decrements the television channel.-->
+    <!--KEYCODE_CHANNEL_DOWN-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_CHANNEL_DOWN</fromName>-->
+    <!--<fromValue>167</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Zoom in key.-->
+    <!--KEYCODE_ZOOM_IN-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_ZOOM_IN</fromName>-->
+    <!--<fromValue>168</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Zoom out key.-->
+    <!--KEYCODE_ZOOM_OUT-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_ZOOM_OUT</fromName>-->
+    <!--<fromValue>169</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: TV key. On TV remotes, switches to viewing live TV.-->
+    <!--KEYCODE_TV-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV</fromName>-->
+    <!--<fromValue>170</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Window key. On TV remotes, toggles picture-in-picture mode or other windowing functions. On Android Wear devices, triggers a display offset.-->
+    <!--KEYCODE_WINDOW-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_WINDOW</fromName>-->
+    <!--<fromValue>171</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Guide key. On TV remotes, shows a programming guide.-->
+    <!--KEYCODE_GUIDE-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_GUIDE</fromName>-->
+    <!--<fromValue>172</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: DVR key. On some TV remotes, switches to a DVR mode for recorded shows.-->
+    <!--KEYCODE_DVR-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_DVR</fromName>-->
+    <!--<fromValue>173</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Bookmark key. On some TV remotes, bookmarks content or web pages.-->
+    <!--KEYCODE_BOOKMARK-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BOOKMARK</fromName>-->
+    <!--<fromValue>174</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Toggle captions key. Switches the mode for closed-captioning text, for example during television shows.-->
+    <!--KEYCODE_CAPTIONS-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_CAPTIONS</fromName>-->
+    <!--<fromValue>175</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Settings key. Starts the system settings activity.-->
+    <!--KEYCODE_SETTINGS-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_SETTINGS</fromName>-->
+    <!--<fromValue>176</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: TV power key. On TV remotes, toggles the power on a television screen.-->
+    <!--KEYCODE_TV_POWER-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_POWER</fromName>-->
+    <!--<fromValue>177</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: TV input key. On TV remotes, switches the input on a television screen.-->
+    <!--KEYCODE_TV_INPUT-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_INPUT</fromName>-->
+    <!--<fromValue>178</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Set-top-box power key. On TV remotes, toggles the power on an external Set-top-box.-->
+    <!--KEYCODE_STB_POWER-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_STB_POWER</fromName>-->
+    <!--<fromValue>179</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Set-top-box input key. On TV remotes, switches the input mode on an external Set-top-box.-->
+    <!--KEYCODE_STB_INPUT-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_STB_INPUT</fromName>-->
+    <!--<fromValue>180</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: A/V Receiver power key. On TV remotes, toggles the power on an external A/V Receiver.-->
+    <!--KEYCODE_AVR_POWER-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_AVR_POWER</fromName>-->
+    <!--<fromValue>181</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: A/V Receiver input key. On TV remotes, switches the input mode on an external A/V Receiver.-->
+    <!--KEYCODE_AVR_INPUT-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_AVR_INPUT</fromName>-->
+    <!--<fromValue>182</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Red "programmable" key. On TV remotes, acts as a contextual/programmable key.-->
+    <!--KEYCODE_PROG_RED-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_PROG_RED</fromName>-->
+    <!--<fromValue>183</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Green "programmable" key. On TV remotes, actsas a contextual/programmable key.-->
+    <!--KEYCODE_PROG_GREEN-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_PROG_GREEN</fromName>-->
+    <!--<fromValue>184</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Yellow "programmable" key. On TV remotes, acts as a contextual/programmable key.-->
+    <!--KEYCODE_PROG_YELLOW-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_PROG_YELLOW</fromName>-->
+    <!--<fromValue>185</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Blue "programmable" key. On TV remotes, acts as a contextual/programmable key.-->
+    <!--KEYCODE_PROG_BLUE-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_PROG_BLUE</fromName>-->
+    <!--<fromValue>186</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: App switch key. Should bring up the application switcher dialog.-->
+    <!--KEYCODE_APP_SWITCH-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_APP_SWITCH</fromName>-->
+    <!--<fromValue>187</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Generic Game Pad Button #1.-->
+    <!--KEYCODE_BUTTON_1-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_1</fromName>-->
+    <!--<fromValue>188</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Generic Game Pad Button #2.-->
+    <!--KEYCODE_BUTTON_2-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_2</fromName>-->
+    <!--<fromValue>189</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Generic Game Pad Button #3.-->
+    <!--KEYCODE_BUTTON_3-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_3</fromName>-->
+    <!--<fromValue>190</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Generic Game Pad Button #4.-->
+    <!--KEYCODE_BUTTON_4-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_4</fromName>-->
+    <!--<fromValue>191</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Generic Game Pad Button #5.-->
+    <!--KEYCODE_BUTTON_5-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_5</fromName>-->
+    <!--<fromValue>192</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Generic Game Pad Button #6.-->
+    <!--KEYCODE_BUTTON_6-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_6</fromName>-->
+    <!--<fromValue>193</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Generic Game Pad Button #7.-->
+    <!--KEYCODE_BUTTON_7-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_7</fromName>-->
+    <!--<fromValue>194</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Generic Game Pad Button #8.-->
+    <!--KEYCODE_BUTTON_8-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_8</fromName>-->
+    <!--<fromValue>195</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Generic Game Pad Button #9.-->
+    <!--KEYCODE_BUTTON_9-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_9</fromName>-->
+    <!--<fromValue>196</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Generic Game Pad Button #10.-->
+    <!--KEYCODE_BUTTON_10-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_10</fromName>-->
+    <!--<fromValue>197</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Generic Game Pad Button #11.-->
+    <!--KEYCODE_BUTTON_11-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_11</fromName>-->
+    <!--<fromValue>198</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Generic Game Pad Button #12.-->
+    <!--KEYCODE_BUTTON_12-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_12</fromName>-->
+    <!--<fromValue>199</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Generic Game Pad Button #13.-->
+    <!--KEYCODE_BUTTON_13-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_13</fromName>-->
+    <!--<fromValue>200</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Generic Game Pad Button #14.-->
+    <!--KEYCODE_BUTTON_14-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_14</fromName>-->
+    <!--<fromValue>201</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Generic Game Pad Button #15.-->
+    <!--KEYCODE_BUTTON_15-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_15</fromName>-->
+    <!--<fromValue>202</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Generic Game Pad Button #16.-->
+    <!--KEYCODE_BUTTON_16-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BUTTON_16</fromName>-->
+    <!--<fromValue>203</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Language Switch key. Toggles the current input language such as switching between English and Japanese on a QWERTY keyboard.  On some devices, the same function may be performed by pressing Shift+Spacebar.-->
+    <!--KEYCODE_LANGUAGE_SWITCH-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_LANGUAGE_SWITCH</fromName>-->
+    <!--<fromValue>204</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Manner Mode key. Toggles silent or vibrate mode on and off to make the device behave more politely in certain settings such as on a crowded train.  On some devices, the key may only operate when long-pressed.-->
+    <!--KEYCODE_MANNER_MODE-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_MANNER_MODE</fromName>-->
+    <!--<fromValue>205</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: 3D Mode key. Toggles the display between 2D and 3D mode.-->
+    <!--KEYCODE_3D_MODE-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_3D_MODE</fromName>-->
+    <!--<fromValue>206</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Contacts special function key. Used to launch an address book application.-->
+    <!--KEYCODE_CONTACTS-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_CONTACTS</fromName>-->
+    <!--<fromValue>207</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Calendar special function key. Used to launch a calendar application.-->
+    <!--KEYCODE_CALENDAR-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_CALENDAR</fromName>-->
+    <!--<fromValue>208</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Music special function key. Used to launch a music player application.-->
+    <!--KEYCODE_MUSIC-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_MUSIC</fromName>-->
+    <!--<fromValue>209</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Calculator special function key. Used to launch a calculator application.-->
+    <!--KEYCODE_CALCULATOR-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_CALCULATOR</fromName>-->
+    <!--<fromValue>210</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Japanese full-width / half-width key.-->
+    <!--KEYCODE_ZENKAKU_HANKAKU-->
+    <relation>
+        <fromName>KEYCODE_ZENKAKU_HANKAKU</fromName>
+        <fromValue>211</fromValue>
+        <thruName>Zenkaku_Hankaku</thruName>
+    </relation>
+
+    <!--Key code constant: Japanese alphanumeric key.-->
+    <!--KEYCODE_EISU-->
+    <relation>
+        <fromName>KEYCODE_EISU</fromName>
+        <fromValue>212</fromValue>
+        <thruName>Eisu_toggle</thruName>
+    </relation>
+
+    <!--Key code constant: Japanese non-conversion key.-->
+    <!--KEYCODE_MUHENKAN-->
+    <relation>
+        <fromName>KEYCODE_MUHENKAN</fromName>
+        <fromValue>213</fromValue>
+        <thruName>Muhenkan</thruName>
+    </relation>
+
+    <!--Key code constant: Japanese conversion key.-->
+    <!--KEYCODE_HENKAN-->
+    <relation>
+        <fromName>KEYCODE_HENKAN</fromName>
+        <fromValue>214</fromValue>
+        <thruName>Henkan</thruName>
+    </relation>
+
+    <!--Key code constant: Japanese katakana / hiragana key.-->
+    <!--KEYCODE_KATAKANA_HIRAGANA-->
+    <relation>
+        <fromName>KEYCODE_KATAKANA_HIRAGANA</fromName>
+        <fromValue>215</fromValue>
+        <thruName>Hiragana_Katakana</thruName>
+    </relation>
+
+    <!--Key code constant: Japanese Yen key.-->
+    <!--KEYCODE_YEN-->
+    <relation>
+        <fromName>KEYCODE_YEN</fromName>
+        <fromValue>216</fromValue>
+        <thruName>yen</thruName>
+    </relation>
+
+    <!--Key code constant: Japanese Ro key.-->
+    <!--KEYCODE_RO-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_RO</fromName>-->
+    <!--<fromValue>217</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Japanese kana key.-->
+    <!--KEYCODE_KANA-->
+    <relation>
+        <fromName>KEYCODE_KANA</fromName>
+        <fromValue>218</fromValue>
+        <thruName>Kana_Lock</thruName>
+    </relation>
+
+    <!--Key code constant: Assist key. Launches the global assist activity.  Not delivered to applications.-->
+    <!--KEYCODE_ASSIST-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_ASSIST</fromName>-->
+    <!--<fromValue>219</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Brightness Down key. Adjusts the screen brightness down.-->
+    <!--KEYCODE_BRIGHTNESS_DOWN-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BRIGHTNESS_DOWN</fromName>-->
+    <!--<fromValue>220</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Brightness Up key. Adjusts the screen brightness up.-->
+    <!--KEYCODE_BRIGHTNESS_UP-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_BRIGHTNESS_UP</fromName>-->
+    <!--<fromValue>221</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Audio Track key. Switches the audio tracks.-->
+    <!--KEYCODE_MEDIA_AUDIO_TRACK-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_MEDIA_AUDIO_TRACK</fromName>-->
+    <!--<fromValue>222</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Sleep key. Puts the device to sleep.  Behaves somewhat like {@link #KEYCODE_POWER} but it has no effect if the device is already asleep.-->
+    <!--KEYCODE_SLEEP-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_SLEEP</fromName>-->
+    <!--<fromValue>223</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Wakeup key. Wakes up the device.  Behaves somewhat like {@link #KEYCODE_POWER} but it has no effect if the device is already awake.-->
+    <!--KEYCODE_WAKEUP-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_WAKEUP</fromName>-->
+    <!--<fromValue>224</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Pairing key. Initiates peripheral pairing mode. Useful for pairing remote control devices or game controllers, especially if no other input mode is available.-->
+    <!--KEYCODE_PAIRING-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_PAIRING</fromName>-->
+    <!--<fromValue>225</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Media Top Menu key. Goes to the top of media menu.-->
+    <!--KEYCODE_MEDIA_TOP_MENU-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_MEDIA_TOP_MENU</fromName>-->
+    <!--<fromValue>226</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: '11' key.-->
+    <!--KEYCODE_11-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_11</fromName>-->
+    <!--<fromValue>227</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: '12' key.-->
+    <!--KEYCODE_12-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_12</fromName>-->
+    <!--<fromValue>228</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Last Channel key. Goes to the last viewed channel.-->
+    <!--KEYCODE_LAST_CHANNEL-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_LAST_CHANNEL</fromName>-->
+    <!--<fromValue>229</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: TV data service key. Displays data services like weather, sports.-->
+    <!--KEYCODE_TV_DATA_SERVICE-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_DATA_SERVICE</fromName>-->
+    <!--<fromValue>230</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Voice Assist key. Launches the global voice assist activity. Not delivered to applications.-->
+    <!--KEYCODE_VOICE_ASSIST-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_VOICE_ASSIST</fromName>-->
+    <!--<fromValue>231</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Radio key. Toggles TV service / Radio service.-->
+    <!--KEYCODE_TV_RADIO_SERVICE-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_RADIO_SERVICE</fromName>-->
+    <!--<fromValue>232</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Teletext key. Displays Teletext service.-->
+    <!--KEYCODE_TV_TELETEXT-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_TELETEXT</fromName>-->
+    <!--<fromValue>233</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Number entry key. Initiates to enter multi-digit channel nubmber when each digit key is assigned for selecting separate channel. Corresponds to Number Entry Mode (0x1D) of CEC User Control Code.-->
+    <!--KEYCODE_TV_NUMBER_ENTRY-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_NUMBER_ENTRY</fromName>-->
+    <!--<fromValue>234</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Analog Terrestrial key. Switches to analog terrestrial broadcast service.-->
+    <!--KEYCODE_TV_TERRESTRIAL_ANALOG-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_TERRESTRIAL_ANALOG</fromName>-->
+    <!--<fromValue>235</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Digital Terrestrial key. Switches to digital terrestrial broadcast service.-->
+    <!--KEYCODE_TV_TERRESTRIAL_DIGITAL-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_TERRESTRIAL_DIGITAL</fromName>-->
+    <!--<fromValue>236</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Satellite key. Switches to digital satellite broadcast service.-->
+    <!--KEYCODE_TV_SATELLITE-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_SATELLITE</fromName>-->
+    <!--<fromValue>237</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: BS key. Switches to BS digital satellite broadcasting service available in Japan.-->
+    <!--KEYCODE_TV_SATELLITE_BS-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_SATELLITE_BS</fromName>-->
+    <!--<fromValue>238</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: CS key. Switches to CS digital satellite broadcasting service available in Japan.-->
+    <!--KEYCODE_TV_SATELLITE_CS-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_SATELLITE_CS</fromName>-->
+    <!--<fromValue>239</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: BS/CS key. Toggles between BS and CS digital satellite services.-->
+    <!--KEYCODE_TV_SATELLITE_SERVICE-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_SATELLITE_SERVICE</fromName>-->
+    <!--<fromValue>240</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Toggle Network key. Toggles selecting broacast services.-->
+    <!--KEYCODE_TV_NETWORK-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_NETWORK</fromName>-->
+    <!--<fromValue>241</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Antenna/Cable key. Toggles broadcast input source between antenna and cable.-->
+    <!--KEYCODE_TV_ANTENNA_CABLE-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_ANTENNA_CABLE</fromName>-->
+    <!--<fromValue>242</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: HDMI #1 key. Switches to HDMI input #1.-->
+    <!--KEYCODE_TV_INPUT_HDMI_1-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_INPUT_HDMI_1</fromName>-->
+    <!--<fromValue>243</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: HDMI #2 key. Switches to HDMI input #2.-->
+    <!--KEYCODE_TV_INPUT_HDMI_2-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_INPUT_HDMI_2</fromName>-->
+    <!--<fromValue>244</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: HDMI #3 key. Switches to HDMI input #3.-->
+    <!--KEYCODE_TV_INPUT_HDMI_3-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_INPUT_HDMI_3</fromName>-->
+    <!--<fromValue>245</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: HDMI #4 key. Switches to HDMI input #4.-->
+    <!--KEYCODE_TV_INPUT_HDMI_4-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_INPUT_HDMI_4</fromName>-->
+    <!--<fromValue>246</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Composite #1 key. Switches to composite video input #1.-->
+    <!--KEYCODE_TV_INPUT_COMPOSITE_1-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_INPUT_COMPOSITE_1</fromName>-->
+    <!--<fromValue>247</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Composite #2 key. Switches to composite video input #2.-->
+    <!--KEYCODE_TV_INPUT_COMPOSITE_2-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_INPUT_COMPOSITE_2</fromName>-->
+    <!--<fromValue>248</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Component #1 key. Switches to component video input #1.-->
+    <!--KEYCODE_TV_INPUT_COMPONENT_1-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_INPUT_COMPONENT_1</fromName>-->
+    <!--<fromValue>249</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Component #2 key. Switches to component video input #2.-->
+    <!--KEYCODE_TV_INPUT_COMPONENT_2-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_INPUT_COMPONENT_2</fromName>-->
+    <!--<fromValue>250</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: VGA #1 key. Switches to VGA (analog RGB) input #1.-->
+    <!--KEYCODE_TV_INPUT_VGA_1-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_INPUT_VGA_1</fromName>-->
+    <!--<fromValue>251</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Audio description key. Toggles audio description off / on.-->
+    <!--KEYCODE_TV_AUDIO_DESCRIPTION-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_AUDIO_DESCRIPTION</fromName>-->
+    <!--<fromValue>252</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Audio description mixing volume up key. Louden audio description volume as compared with normal audio volume.-->
+    <!--KEYCODE_TV_AUDIO_DESCRIPTION_MIX_UP-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_AUDIO_DESCRIPTION_MIX_UP</fromName>-->
+    <!--<fromValue>253</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Audio description mixing volume down key. Lessen audio description volume as compared with normal audio volume.-->
+    <!--KEYCODE_TV_AUDIO_DESCRIPTION_MIX_DOWN-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_AUDIO_DESCRIPTION_MIX_DOWN</fromName>-->
+    <!--<fromValue>254</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Zoom mode key. Changes Zoom mode (Normal, Full, Zoom, Wide-zoom, etc.)-->
+    <!--KEYCODE_TV_ZOOM_MODE-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_ZOOM_MODE</fromName>-->
+    <!--<fromValue>255</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Contents menu key. Goes to the title list. Corresponds to Contents Menu (0x0B) of CEC User Control Code-->
+    <!--KEYCODE_TV_CONTENTS_MENU-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_CONTENTS_MENU</fromName>-->
+    <!--<fromValue>256</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Media context menu key. Goes to the context menu of media contents. Corresponds to Media Context-sensitive Menu (0x11) of CEC User Control Code.-->
+    <!--KEYCODE_TV_MEDIA_CONTEXT_MENU-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_MEDIA_CONTEXT_MENU</fromName>-->
+    <!--<fromValue>257</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Timer programming key. Goes to the timer recording menu. Corresponds to Timer Programming (0x54) of CEC User Control Code.-->
+    <!--KEYCODE_TV_TIMER_PROGRAMMING-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_TV_TIMER_PROGRAMMING</fromName>-->
+    <!--<fromValue>258</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Help key.-->
+    <!--KEYCODE_HELP-->
+    <relation>
+        <fromName>KEYCODE_HELP</fromName>
+        <fromValue>259</fromValue>
+        <thruName>Help</thruName>
+    </relation>
+
+    <!--Key code constant: Navigate to previous key. Goes backward by one item in an ordered collection of items.-->
+    <!--KEYCODE_NAVIGATE_PREVIOUS-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_NAVIGATE_PREVIOUS</fromName>-->
+    <!--<fromValue>260</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Navigate to next key. Advances to the next item in an ordered collection of items.-->
+    <!--KEYCODE_NAVIGATE_NEXT-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_NAVIGATE_NEXT</fromName>-->
+    <!--<fromValue>261</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Navigate in key. Activates the item that currently has focus or expands to the next level of a navigation hierarchy.-->
+    <!--KEYCODE_NAVIGATE_IN-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_NAVIGATE_IN</fromName>-->
+    <!--<fromValue>262</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Navigate out key. Backs out one level of a navigation hierarchy or collapses the item that currently has focus.-->
+    <!--KEYCODE_NAVIGATE_OUT-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_NAVIGATE_OUT</fromName>-->
+    <!--<fromValue>263</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Primary stem key for Wear Main power/reset button on watch.-->
+    <!--KEYCODE_STEM_PRIMARY-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_STEM_PRIMARY</fromName>-->
+    <!--<fromValue>264</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Generic stem key 1 for Wear-->
+    <!--KEYCODE_STEM_1-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_STEM_1</fromName>-->
+    <!--<fromValue>265</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Generic stem key 2 for Wear-->
+    <!--KEYCODE_STEM_2-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_STEM_2</fromName>-->
+    <!--<fromValue>266</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Generic stem key 3 for Wear-->
+    <!--KEYCODE_STEM_3-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_STEM_3</fromName>-->
+    <!--<fromValue>267</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Directional Pad Up-Left-->
+    <!--KEYCODE_DPAD_UP_LEFT-->
+    <relation>
+        <fromName>KEYCODE_DPAD_UP_LEFT</fromName>
+        <fromValue>268</fromValue>
+        <thruName>Pointer_UpLeft</thruName>
+    </relation>
+
+    <!--Key code constant: Directional Pad Down-Left-->
+    <!--KEYCODE_DPAD_DOWN_LEFT-->
+    <relation>
+        <fromName>KEYCODE_DPAD_DOWN_LEFT</fromName>
+        <fromValue>269</fromValue>
+        <thruName>Pointer_DownLeft</thruName>
+    </relation>
+
+    <!--Key code constant: Directional Pad Up-Right-->
+    <!--KEYCODE_DPAD_UP_RIGHT-->
+    <relation>
+        <fromName>KEYCODE_DPAD_UP_RIGHT</fromName>
+        <fromValue>270</fromValue>
+        <thruName>Pointer_UpRight</thruName>
+    </relation>
+
+    <!--Key code constant: Directional Pad Down-Right-->
+    <!--KEYCODE_DPAD_DOWN_RIGHT-->
+    <relation>
+        <fromName>KEYCODE_DPAD_DOWN_RIGHT</fromName>
+        <fromValue>271</fromValue>
+        <thruName>Pointer_DownRight</thruName>
+    </relation>
+
+    <!--Key code constant: Skip forward media key.-->
+    <!--KEYCODE_MEDIA_SKIP_FORWARD-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_MEDIA_SKIP_FORWARD</fromName>-->
+    <!--<fromValue>272</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Skip backward media key.-->
+    <!--KEYCODE_MEDIA_SKIP_BACKWARD-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_MEDIA_SKIP_BACKWARD</fromName>-->
+    <!--<fromValue>273</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Step forward media key. Steps media forward, one frame at a time.-->
+    <!--KEYCODE_MEDIA_STEP_FORWARD-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_MEDIA_STEP_FORWARD</fromName>-->
+    <!--<fromValue>274</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Step backward media key. Steps media backward, one frame at a time.-->
+    <!--KEYCODE_MEDIA_STEP_BACKWARD-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_MEDIA_STEP_BACKWARD</fromName>-->
+    <!--<fromValue>275</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: put device to sleep unless a wakelock is held.-->
+    <!--KEYCODE_SOFT_SLEEP-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_SOFT_SLEEP</fromName>-->
+    <!--<fromValue>276</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Cut key.-->
+    <!--KEYCODE_CUT-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_CUT</fromName>-->
+    <!--<fromValue>277</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Copy key.-->
+    <!--KEYCODE_COPY-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_COPY</fromName>-->
+    <!--<fromValue>278</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Paste key.-->
+    <!--KEYCODE_PASTE-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_PASTE</fromName>-->
+    <!--<fromValue>279</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Consumed by the system for navigation up-->
+    <!--KEYCODE_SYSTEM_NAVIGATION_UP-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_SYSTEM_NAVIGATION_UP</fromName>-->
+    <!--<fromValue>280</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Consumed by the system for navigation down-->
+    <!--KEYCODE_SYSTEM_NAVIGATION_DOWN-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_SYSTEM_NAVIGATION_DOWN</fromName>-->
+    <!--<fromValue>281</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Consumed by the system for navigation left-->
+    <!--KEYCODE_SYSTEM_NAVIGATION_LEFT-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_SYSTEM_NAVIGATION_LEFT</fromName>-->
+    <!--<fromValue>282</fromValue>-->
+    <!--</relation>-->
+
+    <!--Key code constant: Consumed by the system for navigation right-->
+    <!--KEYCODE_SYSTEM_NAVIGATION_RIGHT-->
+    <!--<relation>-->
+    <!--<fromName>KEYCODE_SYSTEM_NAVIGATION_RIGHT</fromName>-->
+    <!--<fromValue>283</fromValue>-->
+    <!--</relation>-->
+</relations>
