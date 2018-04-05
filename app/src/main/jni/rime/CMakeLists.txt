@@ -118,6 +118,7 @@ target_include_directories(
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-move/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-functional/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-signals2/master/include
+  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-function/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-filesystem/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-regex/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-locale/master/include
