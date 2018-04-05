@@ -121,6 +121,7 @@ target_include_directories(
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-function/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-type_index/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-bind/master/include
+  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-multi_index/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-filesystem/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-regex/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-locale/master/include
