@@ -57,7 +57,8 @@ target_include_directories(
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-static_assert/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-integer/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-preprocessor/master/include
-  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-container_hash/master/include)
+  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-container_hash/master/include
+  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-detail/master/include)
 #  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../iconv/master/include
 
 #target_link_libraries(
