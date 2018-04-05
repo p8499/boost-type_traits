@@ -63,6 +63,6 @@ target_include_directories(
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-range/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-system/master/include)
 
-#target_link_libraries(
-#  boost-filesystem
-#  iconv)
+target_link_libraries(
+  boost-filesystem
+  boost-system)
