@@ -46,7 +46,9 @@ target_compile_options(
 target_include_directories(
   boost-regex
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/master/include
-  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-config/master/include)
+  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-config/master/include
+  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-predef/master/include
+  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-throw_exception/master/include)
 #  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../iconv/master/include
 
 #target_link_libraries(
