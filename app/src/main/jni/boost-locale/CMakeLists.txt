@@ -35,7 +35,7 @@ add_library(
 
 target_compile_definitions(
   boost-locale
-  PUBLIC BOOST_SIGNALS2
+#  PUBLIC BOOST_SIGNALS2
   PUBLIC BOOST_LOCALE_WITH_ICONV)
 
 target_compile_options(

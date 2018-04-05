@@ -33,9 +33,9 @@ add_library(
 #  ${CMAKE_CURRENT_SOURCE_DIR}/master/libs/locale/src/encoding/codepage.cpp
 #  ${CMAKE_CURRENT_SOURCE_DIR}/master/libs/system/src/error_code.cpp
 
-target_compile_definitions(
-  boost-filesystem
-  PUBLIC BOOST_SIGNALS2)
+#target_compile_definitions(
+#  boost-filesystem
+#  PUBLIC BOOST_SIGNALS2)
 #  PUBLIC BOOST_LOCALE_WITH_ICONV
 
 target_compile_options(

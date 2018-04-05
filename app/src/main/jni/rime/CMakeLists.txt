@@ -112,6 +112,7 @@ target_include_directories(
   rime
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/master/src
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/master/thirdparty/include
+  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-format/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-filesystem/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-regex/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-locale/master/include
