@@ -53,7 +53,8 @@ target_include_directories(
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-smart_ptr/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-core/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-mpl/master/include
-  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-type_traits/master/include)
+  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-type_traits/master/include
+  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-static_assert/master/include)
 #  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../iconv/master/include
 
 #target_link_libraries(
