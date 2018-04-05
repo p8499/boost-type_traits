@@ -60,6 +60,7 @@ target_include_directories(
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-throw_exception/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-io/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-container_hash/master/include
+  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-range/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-system/master/include)
 
 #target_link_libraries(
