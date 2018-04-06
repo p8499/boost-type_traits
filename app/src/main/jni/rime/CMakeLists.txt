@@ -131,6 +131,7 @@ target_include_directories(
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-interprocess/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-array/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-intrusive/master/include
+  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-container/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-filesystem/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-regex/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-locale/master/include
