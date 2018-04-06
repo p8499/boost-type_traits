@@ -125,6 +125,7 @@ target_include_directories(
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-variant/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-any/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-date_time/master/include
+  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-numeric_conversion/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-filesystem/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-regex/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-locale/master/include
