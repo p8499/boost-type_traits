@@ -30,6 +30,16 @@ add_library(
   ${CMAKE_CURRENT_SOURCE_DIR}/master/src/rime/algo/encoder.cc
   ${CMAKE_CURRENT_SOURCE_DIR}/master/src/rime/algo/syllabifier.cc
   ${CMAKE_CURRENT_SOURCE_DIR}/master/src/rime/algo/utilities.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/master/src/rime/config/auto_patch_config_plugin.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/master/src/rime/config/build_info_plugin.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/master/src/rime/config/config_compiler.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/master/src/rime/config/config_component.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/master/src/rime/config/config_data.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/master/src/rime/config/config_types.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/master/src/rime/config/default_config_plugin.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/master/src/rime/config/legacy_dictionary_config_plugin.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/master/src/rime/config/legacy_preset_config_plugin.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/master/src/rime/config/save_output_plugin.cc
   ${CMAKE_CURRENT_SOURCE_DIR}/master/src/rime/dict/db.cc
   ${CMAKE_CURRENT_SOURCE_DIR}/master/src/rime/dict/db_utils.cc
   ${CMAKE_CURRENT_SOURCE_DIR}/master/src/rime/dict/dict_compiler.cc
