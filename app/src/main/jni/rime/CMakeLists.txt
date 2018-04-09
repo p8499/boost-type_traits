@@ -139,6 +139,7 @@ target_include_directories(
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-typeof/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-uuid/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-random/master/include
+  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-tti/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-filesystem/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-regex/master/include
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../boost-locale/master/include
