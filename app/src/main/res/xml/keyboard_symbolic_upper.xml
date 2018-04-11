@@ -26,20 +26,20 @@
             android:keyLabel="&amp;"
             android:keyWidth="10%p"/>
         <Key
-            android:codes="89,0"
-            android:keyLabel="℃"
+            android:codes="8457,0"
+            android:keyLabel="℉"
             android:keyWidth="10%p"/>
         <Key
             android:codes="85,0"
             android:keyLabel="\\"
             android:keyWidth="10%p"/>
         <Key
-            android:codes="73,0"
-            android:keyLabel="/"
+            android:codes="247,0"
+            android:keyLabel="÷"
             android:keyWidth="10%p"/>
         <Key
-            android:codes="79,0"
-            android:keyLabel="+"
+            android:codes="177,0"
+            android:keyLabel="±"
             android:keyWidth="10%p"/>
         <Key
             android:codes="80,0"
@@ -56,12 +56,12 @@
             android:keyLabel="~"
             android:keyWidth="10%p"/>
         <Key
-            android:codes="70,0"
-            android:keyLabel="¥"
+            android:codes="8364,0"
+            android:keyLabel="€"
             android:keyWidth="10%p"/>
         <Key
-            android:codes="68,0"
-            android:keyLabel="$"
+            android:codes="163,0"
+            android:keyLabel="£"
             android:keyWidth="10%p"/>
         <Key
             android:codes="71,0"
@@ -76,16 +76,16 @@
             android:keyLabel="&lt;"
             android:keyWidth="10%p"/>
         <Key
-            android:codes="75,0"
-            android:keyLabel="*"
+            android:codes="215,0"
+            android:keyLabel="×"
             android:keyWidth="10%p"/>
         <Key
-            android:codes="76,0"
-            android:keyLabel="-"
+            android:codes="8723,0"
+            android:keyLabel="∓"
             android:keyWidth="10%p"/>
         <Key
-            android:codes="39,0"
-            android:keyLabel="'"
+            android:codes="96,0"
+            android:keyLabel="`"
             android:keyWidth="10%p"/>
     </Row>
     <Row>
@@ -120,8 +120,8 @@
             android:keyLabel="}"
             android:keyWidth="10%p"/>
         <Key
-            android:codes="77,0"
-            android:keyLabel="="
+            android:codes="8776,0"
+            android:keyLabel="≈"
             android:keyWidth="10%p"/>
         <Key
             android:codes="-5"
@@ -135,24 +135,24 @@
             android:keyLabel=","
             android:keyWidth="10%p"/>
         <Key
-            android:codes="46,0"
-            android:keyLabel="."
+            android:codes="8230,0"
+            android:keyLabel="…"
             android:keyWidth="10%p"/>
         <Key
-            android:codes="63,0"
-            android:keyLabel="\?"
+            android:codes="191,0"
+            android:keyLabel="¿"
             android:keyWidth="10%p"/>
         <Key
-            android:codes="33,0"
-            android:keyLabel="!"
+            android:codes="161,0"
+            android:keyLabel="¡"
             android:keyWidth="10%p"/>
         <Key
-            android:codes="64,0"
-            android:keyLabel="\@"
+            android:codes="8240,0"
+            android:keyLabel="‰"
             android:keyWidth="10%p"/>
         <Key
-            android:codes="37,0"
-            android:keyLabel="%"
+            android:codes="174,0"
+            android:keyLabel="®"
             android:keyWidth="10%p"/>
         <Key
             android:codes="62,1"

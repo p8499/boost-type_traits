@@ -69,8 +69,9 @@ public class ViewInput extends LinearLayout implements KeyboardView.OnKeyboardAc
      */
     private Handler mCapsWaitingHandler;
     /**
-     * used in popup window
+     * used in menu_keyboard.onTouch()
      */
+    private int mDownItem;
     private float mDownX;
     private float mDownY;
 
@@ -103,11 +104,11 @@ public class ViewInput extends LinearLayout implements KeyboardView.OnKeyboardAc
         //add symbolic
         mKeyboardNames.add(getResources().getString(R.string.ime_symbols));
         mLowerKeyboards.add(new Keyboard(getContext(), R.xml.keyboard_symbolic_lower));
-        mUpperKeyboards.add(null);
+        mUpperKeyboards.add(new Keyboard(getContext(), R.xml.keyboard_symbolic_upper));
         //TODO add symbolic and numeric keyboard here
         //TODO add input type specified keyboard here
         //
-        createPopup1();
+        popup1Create();
         mCapsWaitingHandler = new Handler(msg -> mCapsWaiting = false);
     }
 
@@ -130,30 +131,54 @@ public class ViewInput extends LinearLayout implements KeyboardView.OnKeyboardAc
     }
 
     //endregion
+
     //region [form control]
     @OnTouch(R.id.menu_keyboard)
-    public boolean onMenuKeyboardClick(View v, MotionEvent e) {
+    public boolean onMenuKeyboardTouch(View v, MotionEvent e) {
         switch (e.getAction()) {
             case MotionEvent.ACTION_DOWN: {
+                /*place popup1*/
+                popup1Show();
+                /*select popup1 item with current keyboard*/
+                popup1ItemSelect(getKeyboardIndex());
+                /*the original item position when touch down*/
+                mDownItem = popup1ItemSelected();
                 mDownX = e.getX();
                 mDownY = e.getY();
-                showPopup1();
-                selectItemPopup1(getKeyboardIndex());
                 return true;
             }
             case MotionEvent.ACTION_MOVE: {
-                int selected = selectedItemPopup1();
                 float distance = e.getY() - mDownY;
-                float threashold = itemHeightPopup1(selected) / 2;
-                int target = distance < -threashold ? selected - 1 : distance > threashold ? selected + 1 : selected;
-                if (target != selected && target >= 0 && target < itemCountPopup1())
-                    selectItemPopup1(target);
+                /*target: item position the user targeting at. firstly assuming it equals the original selected position*/
+                int target = mDownItem;
+                /*thresholdFrom, thresholdTo: the distance scope that target holds*/
+                float thresholdFrom = -popup1ItemHeight(target) / 2;
+                float thresholdTo = +popup1ItemHeight(target) / 2;
+                /*let's calculate target*/
+                if (distance < thresholdFrom)
+                    /*y is above down's y*/
+                    while (distance < thresholdFrom && target > 0) {
+                        target -= 1;
+                        thresholdTo = thresholdFrom;
+                        thresholdFrom -= popup1ItemHeight(target);
+                    }
+                else if (distance > thresholdTo)
+                    /*y is below down's y*/
+                    while (distance > thresholdTo && target < popup1ItemCount() - 1) {
+                        target += 1;
+                        thresholdFrom = thresholdTo;
+                        thresholdTo += popup1ItemHeight(target);
+                    }
+                if (target != popup1ItemSelected())
+                    popup1ItemSelect(target);
                 return true;
             }
             case MotionEvent.ACTION_UP: {
+                /*hide popup1*/
                 mMenuKeyboardPopup.dismiss();
-                int selected = selectedItemPopup1();
+                int selected = popup1ItemSelected();
                 Keyboard old = mKeyboard.getKeyboard();
+                /*switch keyboard if item changed*/
                 if (old != mLowerKeyboards.get(selected) && old != mUpperKeyboards.get(selected))
                     mKeyboard.setKeyboard(mLowerKeyboards.get(selected));
                 return true;
@@ -165,6 +190,7 @@ public class ViewInput extends LinearLayout implements KeyboardView.OnKeyboardAc
     }
 
     //endregion
+
     //region [ServiceIme.KeyEventListener client]
     public ViewInput setService(ServiceIme i) {
         mIme = i;
@@ -331,7 +357,7 @@ public class ViewInput extends LinearLayout implements KeyboardView.OnKeyboardAc
     //endregion
 
     //region [Menu Keyboard Popup]
-    private void createPopup1() {
+    private void popup1Create() {
         ViewGroup popup1 = (ViewGroup) inflate(getContext(), R.layout.service_ime_input_popup1, null);
         if (mKeyboardNames.size() == 1) {
             TextView item = (TextView) LayoutInflater.from(getContext()).inflate(R.layout.service_ime_input_popup1_itemsingle, popup1, false);
@@ -356,22 +382,22 @@ public class ViewInput extends LinearLayout implements KeyboardView.OnKeyboardAc
                 .createPopup();
     }
 
-    private void showPopup1() {
+    private void popup1Show() {
         mMenuKeyboardPopup.showAtAnchorView(mMenuKeyboard, VerticalGravity.ABOVE, HorizontalGravity.ALIGN_LEFT, 16, -16);
     }
 
-    private int itemCountPopup1() {
+    private int popup1ItemCount() {
         ViewGroup container = (ViewGroup) mMenuKeyboardPopup.getContentView();
         return container.getChildCount();
     }
 
-    private void selectItemPopup1(int position) {
+    private void popup1ItemSelect(int position) {
         ViewGroup container = (ViewGroup) mMenuKeyboardPopup.getContentView();
         for (int i = 0; i < container.getChildCount(); i++)
             container.getChildAt(i).setSelected(i == position);
     }
 
-    private int selectedItemPopup1() {
+    private int popup1ItemSelected() {
         ViewGroup container = (ViewGroup) mMenuKeyboardPopup.getContentView();
         for (int i = 0; i < container.getChildCount(); i++)
             if (container.getChildAt(i).isSelected())
@@ -379,7 +405,7 @@ public class ViewInput extends LinearLayout implements KeyboardView.OnKeyboardAc
         return -1;
     }
 
-    private int itemHeightPopup1(int position) {
+    private int popup1ItemHeight(int position) {
         ViewGroup container = (ViewGroup) mMenuKeyboardPopup.getContentView();
         return container.getChildAt(position).getHeight();
     }

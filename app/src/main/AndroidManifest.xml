@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.p8499.lang.ime">
 
@@ -15,9 +16,19 @@
             <meta-data
                 android:name="android.view.im"
                 android:resource="@xml/ime"/>
-            <intent-filter><!--try to remove-->
+
+            <intent-filter> <!-- try to remove -->
                 <action android:name="android.view.InputMethod"/>
             </intent-filter>
         </service>
+
+        <activity android:name=".ActivityPreference">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
     </application>
+
 </manifest>
