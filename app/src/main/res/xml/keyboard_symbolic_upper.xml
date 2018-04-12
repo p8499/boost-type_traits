@@ -147,12 +147,12 @@
             android:keyLabel="¡"
             android:keyWidth="10%p"/>
         <Key
-            android:codes="8240,0"
-            android:keyLabel="‰"
+            android:codes="169,0"
+            android:keyLabel="©"
             android:keyWidth="10%p"/>
         <Key
-            android:codes="174,0"
-            android:keyLabel="®"
+            android:codes="8240,0"
+            android:keyLabel="‰"
             android:keyWidth="10%p"/>
         <Key
             android:codes="62,1"

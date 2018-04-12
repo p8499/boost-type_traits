@@ -20,7 +20,7 @@ namespace app {
         SetFieldInteger(env, obj_RimeStatus, "dataSize", cobj->data_size);
         SetFieldString(env, obj_RimeStatus, "schemaId", cobj->schema_id);
         SetFieldString(env, obj_RimeStatus, "schemaName", cobj->schema_name);
-        SetFieldInteger(env, obj_RimeStatus, "isdisabled", cobj->is_disabled);
+        SetFieldInteger(env, obj_RimeStatus, "isDisabled", cobj->is_disabled);
         SetFieldInteger(env, obj_RimeStatus, "isComposing", cobj->is_composing);
         SetFieldInteger(env, obj_RimeStatus, "isAsciiMode", cobj->is_ascii_mode);
         SetFieldInteger(env, obj_RimeStatus, "isFullShape", cobj->is_full_shape);

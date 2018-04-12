@@ -4,6 +4,7 @@ import com.p8499.lang.ime.rime.RimeCandidate;
 import com.p8499.lang.ime.rime.RimeCommit;
 import com.p8499.lang.ime.rime.RimeContext;
 import com.p8499.lang.ime.rime.RimeSchemaListItem;
+import com.p8499.lang.ime.rime.RimeStatus;
 import com.p8499.lang.ime.rime.RimeTraits;
 
 import java.util.List;
@@ -54,7 +55,7 @@ public class JniWrapper {
 
     public static native Long rimeCreateSession();
 
-    public static native Integer rimeGetStatus(Long sessionId);
+    public static native RimeStatus rimeGetStatus(Long sessionId);
 
     public static native void rimeSetOption(Long sessionId, String option, Integer value);
 

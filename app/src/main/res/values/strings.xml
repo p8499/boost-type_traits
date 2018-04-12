@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">廣而告之IME</string>
-    <!--<string name="ime_label">Ng Input</string>-->
-    <string name="ime_qwerty">Qwerty</string>
-    <string name="ime_numeric">数字键盘</string>
-    <string name="ime_symbols">Symbols</string>
+    <string name="service_ime.qwerty">Qwerty</string>
+    <string name="service_ime.numeric">数字键盘</string>
+    <string name="service_ime.symbols">Symbols</string>
+    <string name="activity_preference.title">Preference</string>
+    <string name="activity_preference.select_language">Select Language</string>
 </resources>

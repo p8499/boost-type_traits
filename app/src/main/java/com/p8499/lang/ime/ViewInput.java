@@ -1,6 +1,7 @@
 package com.p8499.lang.ime;
 
 import android.content.Context;
+import android.content.Intent;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
 import android.os.Handler;
@@ -12,9 +13,10 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.ToggleButton;
 
 import com.zyyoona7.lib.EasyPopup;
 import com.zyyoona7.lib.HorizontalGravity;
@@ -25,6 +27,7 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import butterknife.OnTouch;
 
 /**
@@ -43,10 +46,12 @@ public class ViewInput extends LinearLayout implements KeyboardView.OnKeyboardAc
     protected List<Keyboard> mUpperKeyboards;
 
     @BindView(R.id.menu)
-    protected LinearLayout mMenu;
+    protected RelativeLayout mMenu;
     @BindView(R.id.menu_keyboard)
-    protected ToggleButton mMenuKeyboard;
+    protected ImageView mMenuKeyboard;
     protected EasyPopup mMenuKeyboardPopup;
+    @BindView(R.id.menu_settings)
+    protected ImageView mMenuSettings;
 
     @BindView(R.id.keyboard)
     protected KeyboardView mKeyboard;
@@ -98,11 +103,11 @@ public class ViewInput extends LinearLayout implements KeyboardView.OnKeyboardAc
         mLowerKeyboards = new ArrayList<>();
         mUpperKeyboards = new ArrayList<>();
         //add qwerty
-        mKeyboardNames.add(getResources().getString(R.string.ime_qwerty));
+        mKeyboardNames.add(getResources().getString(R.string.service_ime_qwerty));
         mLowerKeyboards.add(new Keyboard(getContext(), R.xml.keyboard_qwerty_lower));
         mUpperKeyboards.add(new Keyboard(getContext(), R.xml.keyboard_qwerty_upper));
         //add symbolic
-        mKeyboardNames.add(getResources().getString(R.string.ime_symbols));
+        mKeyboardNames.add(getResources().getString(R.string.service_ime_symbols));
         mLowerKeyboards.add(new Keyboard(getContext(), R.xml.keyboard_symbolic_lower));
         mUpperKeyboards.add(new Keyboard(getContext(), R.xml.keyboard_symbolic_upper));
         //TODO add symbolic and numeric keyboard here
@@ -137,6 +142,7 @@ public class ViewInput extends LinearLayout implements KeyboardView.OnKeyboardAc
     public boolean onMenuKeyboardTouch(View v, MotionEvent e) {
         switch (e.getAction()) {
             case MotionEvent.ACTION_DOWN: {
+                mMenuKeyboard.setPressed(true);
                 /*place popup1*/
                 popup1Show();
                 /*select popup1 item with current keyboard*/
@@ -174,6 +180,7 @@ public class ViewInput extends LinearLayout implements KeyboardView.OnKeyboardAc
                 return true;
             }
             case MotionEvent.ACTION_UP: {
+                mMenuKeyboard.setPressed(false);
                 /*hide popup1*/
                 mMenuKeyboardPopup.dismiss();
                 int selected = popup1ItemSelected();
@@ -189,6 +196,13 @@ public class ViewInput extends LinearLayout implements KeyboardView.OnKeyboardAc
 
     }
 
+    @OnClick(R.id.menu_settings)
+    public void onMenuSettingsClick(View v) {
+        Intent intent = new Intent(getContext(), ActivityPreference.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.putExtra("sessionId", mRimeSession.getRimeSessionId());
+        getContext().startActivity(intent);
+    }
     //endregion
 
     //region [ServiceIme.KeyEventListener client]
@@ -383,7 +397,7 @@ public class ViewInput extends LinearLayout implements KeyboardView.OnKeyboardAc
     }
 
     private void popup1Show() {
-        mMenuKeyboardPopup.showAtAnchorView(mMenuKeyboard, VerticalGravity.ABOVE, HorizontalGravity.ALIGN_LEFT, 16, -16);
+        mMenuKeyboardPopup.showAtAnchorView(mMenuKeyboard, VerticalGravity.ABOVE, HorizontalGravity.ALIGN_LEFT, 16, -32);
     }
 
     private int popup1ItemCount() {

@@ -209,7 +209,6 @@ public class ServiceIme extends InputMethodService implements RimeSession.RimeSe
         traits.sharedDataDir = "/data/data/com.p8499.lang.ime/files";
         traits.userDataDir = "/data/data/com.p8499.lang.ime/files";
         JniWrapper.startup(traits);
-        JniWrapper.startup(traits);
         JniWrapper.rimeSetup();
         JniWrapper.rimeInitialize();
 //        if (JniWrapper.rimeStartMaintenance(1).intValue() == 1)
