@@ -211,8 +211,8 @@ public class ServiceIme extends InputMethodService implements RimeSession.RimeSe
         JniWrapper.startup(traits);
         JniWrapper.rimeSetup();
         JniWrapper.rimeInitialize();
-//        if (JniWrapper.rimeStartMaintenance(1).intValue() == 1)
-//            JniWrapper.rimeJoinMaintenanceThread();
+        if (JniWrapper.rimeStartMaintenance(1).intValue() == 1)
+            JniWrapper.rimeJoinMaintenanceThread();
         Relation.initialize(getResources());
         mListenerList = new ArrayList<>();
         mCandidatesView = ViewCandidates.create(getLayoutInflater()).setService(this);

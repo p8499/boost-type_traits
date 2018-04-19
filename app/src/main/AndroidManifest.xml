@@ -16,15 +16,21 @@
             <meta-data
                 android:name="android.view.im"
                 android:resource="@xml/ime"/>
+
             <intent-filter> <!-- try to remove -->
                 <action android:name="android.view.InputMethod"/>
             </intent-filter>
         </service>
+
         <activity android:name=".ActivityPreference">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".ActivitySchemas">
+        </activity>
     </application>
+
 </manifest>

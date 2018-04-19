@@ -45,6 +45,8 @@ public class JniWrapper {
 
     public static native RimeSchemaListItem[] rimeGetSchemaList();
 
+    public static native Integer rimeSelectSchema(Long sessionId, String schemaId);
+
     public static native Integer rimeGetModifierByName(String name);
 
     public static native String rimeGetModifierName(Integer modifier);

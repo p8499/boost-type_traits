@@ -311,8 +311,8 @@ public class ViewCandidates extends LinearLayout implements ServiceIme.KeyEventL
             return mCandidateList;
         }
 
-        public CandsAdapter setCandidateList(List<RimeCandidate> mCandidateList) {
-            this.mCandidateList = mCandidateList;
+        public CandsAdapter setCandidateList(List<RimeCandidate>candidateList) {
+            this.mCandidateList = candidateList;
             return this;
         }
 

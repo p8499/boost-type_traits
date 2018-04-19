@@ -57,6 +57,14 @@ JNIEXPORT jobjectArray JNICALL Java_com_p8499_lang_ime_JniWrapper_rimeGetSchemaL
 
 /*
  * Class:     com_p8499_lang_ime_JniWrapper
+ * Method:    rimeSelectSchema
+ * Signature: (Ljava/lang/Long;Ljava/lang/String;)Ljava/lang/Integer;
+ */
+JNIEXPORT jobject JNICALL Java_com_p8499_lang_ime_JniWrapper_rimeSelectSchema
+  (JNIEnv *, jclass, jobject, jstring);
+
+/*
+ * Class:     com_p8499_lang_ime_JniWrapper
  * Method:    rimeGetModifierByName
  * Signature: (Ljava/lang/String;)Ljava/lang/Integer;
  */
@@ -98,7 +106,7 @@ JNIEXPORT jobject JNICALL Java_com_p8499_lang_ime_JniWrapper_rimeCreateSession
 /*
  * Class:     com_p8499_lang_ime_JniWrapper
  * Method:    rimeGetStatus
- * Signature: (Ljava/lang/Long;)Ljava/lang/Integer;
+ * Signature: (Ljava/lang/Long;)Lcom/p8499/lang/ime/rime/RimeStatus;
  */
 JNIEXPORT jobject JNICALL Java_com_p8499_lang_ime_JniWrapper_rimeGetStatus
   (JNIEnv *, jclass, jobject);

@@ -50,6 +50,11 @@ JNIEXPORT jobjectArray JNICALL Java_com_p8499_lang_ime_JniWrapper_rimeGetSchemaL
     return schemaList;
 }
 
+JNIEXPORT jobject JNICALL Java_com_p8499_lang_ime_JniWrapper_rimeSelectSchema
+        (JNIEnv *env, jclass cls, jobject sessionId, jstring schemaId) {
+    return ConvertFromInt(env, rime->select_schema(ConvertToLong(env, sessionId), ConvertToCharArray(env, schemaId)));
+}
+
 JNIEXPORT jobject JNICALL Java_com_p8499_lang_ime_JniWrapper_rimeGetModifierByName
         (JNIEnv *env, jclass cls, jstring name) {
     return ConvertFromInt(env, RimeGetModifierByName(ConvertToCharArray(env, name)));
