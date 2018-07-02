@@ -25,6 +25,7 @@ public class ActivityPreference extends AppCompatActivity {
 
     protected Presenter presenter = new Presenter();
 
+    //region [initialization]
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +34,9 @@ public class ActivityPreference extends AppCompatActivity {
         presenter.request();
     }
 
+    //endregion
+
+    //region [activity lifecycle]
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -41,6 +45,9 @@ public class ActivityPreference extends AppCompatActivity {
         }
     }
 
+    //endregion
+
+    //region [form control]
     @OnClick(R.id.select_lang)
     public void onSelectLangClick(View v) {
         Intent intent = new Intent(this, ActivitySchemas.class);
@@ -48,25 +55,37 @@ public class ActivityPreference extends AppCompatActivity {
         startActivityForResult(intent, 0);
     }
 
+    //endregion
+
+    //region [presenter methods]
     public void onSessionId(long sessionId) {
         RimeStatus status = JniWrapper.rimeGetStatus(sessionId);
         mSelectLangVal.setTag(status.getSchemaId());
         mSelectLangVal.setText(status.getSchemaName());
     }
 
+    //endregion
+
     class Presenter {
         public void request() {
             Flowable.empty()
                     .observeOn(AndroidSchedulers.mainThread())
-                    .doOnComplete(() -> Option.ofObj(getIntent()).filter(intent -> intent.hasExtra("sessionId")).ifSome(intent -> onSessionId(intent.getLongExtra("sessionId", 0))))
+//                    .doOnComplete(() -> Option.ofObj(getIntent()).filter(intent -> intent.hasExtra("sessionId")).
+//                            ifSome(intent -> onSessionId(intent.getLongExtra("sessionId", 0))))
+                    .doOnComplete(() -> Option.ofObj(JniWrapper.rimeConfigGetString("user", "var/previously_selected_schema"))
+                            /*.ifSome(s -> onSchema(schemaId))*/)
                     .subscribe();
         }
 
         public void selectSchema(String schemaId) {
             Flowable.empty()
                     .observeOn(AndroidSchedulers.mainThread())
-                    .doOnComplete(() -> Option.ofObj(getIntent()).filter(intent -> intent.hasExtra("sessionId")).ifSome(intent -> JniWrapper.rimeSelectSchema(intent.getLongExtra("sessionId", 0), schemaId)))
-                    .doOnComplete(() -> Option.ofObj(getIntent()).filter(intent -> intent.hasExtra("sessionId")).ifSome(intent -> onSessionId(intent.getLongExtra("sessionId", 0))))
+//                    .doOnComplete(() -> Option.ofObj(getIntent()).filter(intent -> intent.hasExtra("sessionId"))
+//                            .ifSome(intent -> JniWrapper.rimeSelectSchema(intent.getLongExtra("sessionId", 0), schemaId))
+//                            .ifSome(intent -> onSessionId(intent.getLongExtra("sessionId", 0))))
+                    .doOnComplete(() -> Option.ofObj(schemaId)
+                            .ifSome(s -> JniWrapper.rimeConfigSetString("user", "var/previously_selected_schema", schemaId))
+                            /*.ifSome(s -> onSchema(schemaId))*/)
                     .subscribe();
         }
     }

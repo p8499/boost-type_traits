@@ -49,6 +49,70 @@ JNIEXPORT void JNICALL Java_com_p8499_lang_ime_JniWrapper_rimeJoinMaintenanceThr
 
 /*
  * Class:     com_p8499_lang_ime_JniWrapper
+ * Method:    rimeConfigGetBool
+ * Signature: (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Integer;
+ */
+JNIEXPORT jobject JNICALL Java_com_p8499_lang_ime_JniWrapper_rimeConfigGetBool
+  (JNIEnv *, jclass, jstring, jstring);
+
+/*
+ * Class:     com_p8499_lang_ime_JniWrapper
+ * Method:    rimeConfigGetInt
+ * Signature: (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Integer;
+ */
+JNIEXPORT jobject JNICALL Java_com_p8499_lang_ime_JniWrapper_rimeConfigGetInt
+  (JNIEnv *, jclass, jstring, jstring);
+
+/*
+ * Class:     com_p8499_lang_ime_JniWrapper
+ * Method:    rimeConfigGetDouble
+ * Signature: (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Double;
+ */
+JNIEXPORT jobject JNICALL Java_com_p8499_lang_ime_JniWrapper_rimeConfigGetDouble
+  (JNIEnv *, jclass, jstring, jstring);
+
+/*
+ * Class:     com_p8499_lang_ime_JniWrapper
+ * Method:    rimeConfigGetString
+ * Signature: (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ */
+JNIEXPORT jstring JNICALL Java_com_p8499_lang_ime_JniWrapper_rimeConfigGetString
+  (JNIEnv *, jclass, jstring, jstring);
+
+/*
+ * Class:     com_p8499_lang_ime_JniWrapper
+ * Method:    rimeConfigSetBool
+ * Signature: (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)Ljava/lang/Integer;
+ */
+JNIEXPORT jobject JNICALL Java_com_p8499_lang_ime_JniWrapper_rimeConfigSetBool
+  (JNIEnv *, jclass, jstring, jstring, jobject);
+
+/*
+ * Class:     com_p8499_lang_ime_JniWrapper
+ * Method:    rimeConfigSetInt
+ * Signature: (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;)Ljava/lang/Integer;
+ */
+JNIEXPORT jobject JNICALL Java_com_p8499_lang_ime_JniWrapper_rimeConfigSetInt
+  (JNIEnv *, jclass, jstring, jstring, jobject);
+
+/*
+ * Class:     com_p8499_lang_ime_JniWrapper
+ * Method:    rimeConfigSetDouble
+ * Signature: (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Double;)Ljava/lang/Integer;
+ */
+JNIEXPORT jobject JNICALL Java_com_p8499_lang_ime_JniWrapper_rimeConfigSetDouble
+  (JNIEnv *, jclass, jstring, jstring, jobject);
+
+/*
+ * Class:     com_p8499_lang_ime_JniWrapper
+ * Method:    rimeConfigSetString
+ * Signature: (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Integer;
+ */
+JNIEXPORT jobject JNICALL Java_com_p8499_lang_ime_JniWrapper_rimeConfigSetString
+  (JNIEnv *, jclass, jstring, jstring, jstring);
+
+/*
+ * Class:     com_p8499_lang_ime_JniWrapper
  * Method:    rimeGetSchemaList
  * Signature: ()[Lcom/p8499/lang/ime/rime/RimeSchemaListItem;
  */

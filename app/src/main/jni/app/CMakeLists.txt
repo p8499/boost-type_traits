@@ -4,6 +4,7 @@ add_library(
   app
   ${CMAKE_CURRENT_SOURCE_DIR}/Utils.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/WrapperRimeTraits.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/WrapperRimeConfig.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/WrapperRimeSchemaListItem.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/WrapperRimeSchemaList.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/WrapperRimeCandidate.cpp

@@ -30,6 +30,20 @@ namespace app {
     jobject ConvertFromLong(JNIEnv *env, long l);
 
 /**
+ * convert between float and java/lang/Float
+ */
+    float ConvertToFloat(JNIEnv *env, jobject jobj);
+
+    jobject ConvertFromFloat(JNIEnv *env, float f);
+
+/**
+ * convert between double and java/lang/Double
+ */
+    float ConvertToDouble(JNIEnv *env, jobject jobj);
+
+    jobject ConvertFromDouble(JNIEnv *env, double d);
+
+    /**
  * convert between char* and java/lang/String
  */
     char *ConvertToCharArray(JNIEnv *env, jstring jstr);
@@ -109,6 +123,20 @@ namespace app {
     long GetFieldLong(JNIEnv *env, jobject jobj, const char *name);
 
     void SetFieldLong(JNIEnv *env, jobject jobj, const char *name, long value);
+
+/**
+ * set or get float (java.lang.Float) field
+ */
+    float GetFieldFloat(JNIEnv *env, jobject jobj, const char *name);
+
+    void SetFieldFloat(JNIEnv *env, jobject jobj, const char *name, float value);
+
+/**
+ * set or get double (java.lang.Double) field
+ */
+    double GetFieldDouble(JNIEnv *env, jobject jobj, const char *name);
+
+    void SetFieldDouble(JNIEnv *env, jobject jobj, const char *name, double value);
 
 /**
  * set or get char* (java.lang.String) field

@@ -1,6 +1,7 @@
 #include <rime_api.h>
 #include <rime/key_table.h>
 #include "WrapperRimeTraits.hpp"
+#include "WrapperRimeConfig.hpp"
 #include "WrapperRimeSchemaList.hpp"
 #include "WrapperRimeStatus.hpp"
 #include "WrapperRimeContext.hpp"
@@ -39,6 +40,120 @@ JNIEXPORT jobject JNICALL Java_com_p8499_lang_ime_JniWrapper_rimeStartMaintenanc
 JNIEXPORT void JNICALL Java_com_p8499_lang_ime_JniWrapper_rimeJoinMaintenanceThread
         (JNIEnv *env, jclass cls) {
     rime->join_maintenance_thread();
+}
+
+JNIEXPORT jobject JNICALL Java_com_p8499_lang_ime_JniWrapper_rimeConfigGetBool
+        (JNIEnv *env, jclass cls, jstring configId, jstring key) {
+    //declaration
+    RimeConfig *cConfig = WrapperRimeConfig::create1();
+    Bool *cValue = NULL;
+    //calculation
+    if (rime->config_open(ConvertToCharArray(env, configId), cConfig)) {
+        rime->config_get_bool(cConfig, ConvertToCharArray(env, key), cValue);
+        rime->config_close(cConfig);
+    }
+    jobject value = ConvertFromInt(env, *cValue);
+    //cleanup
+    WrapperRimeConfig::destroy1(cConfig);
+    cConfig = NULL;
+    delete cValue;
+    cValue = NULL;
+    return value;
+}
+
+JNIEXPORT jobject JNICALL Java_com_p8499_lang_ime_JniWrapper_rimeConfigGetInt
+        (JNIEnv *env, jclass cls, jstring configId, jstring key) {
+    //declaration
+    RimeConfig *cConfig = WrapperRimeConfig::create1();
+    int *cValue = NULL;
+    //calculation
+    if (rime->config_open(ConvertToCharArray(env, configId), cConfig)) {
+        rime->config_get_int(cConfig, ConvertToCharArray(env, key), cValue);
+        rime->config_close(cConfig);
+    }
+    jobject value = ConvertFromInt(env, *cValue);
+    //cleanup
+    WrapperRimeConfig::destroy1(cConfig);
+    cConfig = NULL;
+    delete cValue;
+    cValue = NULL;
+    return value;
+}
+
+JNIEXPORT jobject JNICALL Java_com_p8499_lang_ime_JniWrapper_rimeConfigGetDouble
+        (JNIEnv *env, jclass cls, jstring configId, jstring key) {
+    //declaration
+    RimeConfig *cConfig = WrapperRimeConfig::create1();
+    double *cValue = NULL;
+    //calculation
+    if (rime->config_open(ConvertToCharArray(env, configId), cConfig)) {
+        rime->config_get_double(cConfig, ConvertToCharArray(env, key), cValue);
+        rime->config_close(cConfig);
+    }
+    jobject value = ConvertFromDouble(env, *cValue);
+    //cleanup
+    WrapperRimeConfig::destroy1(cConfig);
+    cConfig = NULL;
+    delete cValue;
+    cValue = NULL;
+    return value;
+}
+
+JNIEXPORT jstring JNICALL Java_com_p8499_lang_ime_JniWrapper_rimeConfigGetString
+        (JNIEnv *env, jclass cls, jstring configId, jstring key) {
+    //TODO
+    return NULL;
+}
+
+JNIEXPORT jobject JNICALL Java_com_p8499_lang_ime_JniWrapper_rimeConfigSetBool
+        (JNIEnv *env, jclass cls, jstring configId, jstring key, jobject value) {
+    //declaration
+    RimeConfig *cConfig = WrapperRimeConfig::create1();
+    //set
+    if (rime->config_open(ConvertToCharArray(env, configId), cConfig)) {
+        rime->config_set_bool(cConfig, ConvertToCharArray(env, key), ConvertToInt(env, value));
+        rime->config_close(cConfig);
+    }
+    //cleanup
+    WrapperRimeConfig::destroy1(cConfig);
+    cConfig = NULL;
+    return value;
+}
+
+JNIEXPORT jobject JNICALL Java_com_p8499_lang_ime_JniWrapper_rimeConfigSetInt
+        (JNIEnv *env, jclass cls, jstring configId, jstring key, jobject value) {
+    //declaration
+    RimeConfig *cConfig = WrapperRimeConfig::create1();
+    //set
+    if (rime->config_open(ConvertToCharArray(env, configId), cConfig)) {
+        rime->config_set_int(cConfig, ConvertToCharArray(env, key), ConvertToInt(env, value));
+        rime->config_close(cConfig);
+    }
+    //cleanup
+    WrapperRimeConfig::destroy1(cConfig);
+    cConfig = NULL;
+    return value;
+}
+
+JNIEXPORT jobject JNICALL Java_com_p8499_lang_ime_JniWrapper_rimeConfigSetDouble
+        (JNIEnv *env, jclass cls, jstring configId, jstring key, jobject value) {
+    //declaration
+    RimeConfig *cConfig = WrapperRimeConfig::create1();
+    //set
+    if (rime->config_open(ConvertToCharArray(env, configId), cConfig)) {
+        rime->config_set_double(cConfig, ConvertToCharArray(env, key), ConvertToDouble(env, value));
+        rime->config_close(cConfig);
+    }
+    //cleanup
+    WrapperRimeConfig::destroy1(cConfig);
+    cConfig = NULL;
+    return value;
+}
+
+JNIEXPORT jobject JNICALL Java_com_p8499_lang_ime_JniWrapper_rimeConfigSetString
+        (JNIEnv *env, jclass cls, jstring configId, jstring key, jobject value) {
+    //TODO
+    return NULL;
 }
 
 JNIEXPORT jobjectArray JNICALL Java_com_p8499_lang_ime_JniWrapper_rimeGetSchemaList

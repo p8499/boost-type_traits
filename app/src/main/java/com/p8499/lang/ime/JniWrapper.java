@@ -43,6 +43,22 @@ public class JniWrapper {
 
     public static native void rimeJoinMaintenanceThread();
 
+    public static native Integer rimeConfigGetBool(String configId, String key);
+
+    public static native Integer rimeConfigGetInt(String configId, String key);
+
+    public static native Double rimeConfigGetDouble(String configId, String key);
+
+    public static native String rimeConfigGetString(String configId, String key);
+
+    public static native Integer rimeConfigSetBool(String configId, String key, Integer value);
+
+    public static native Integer rimeConfigSetInt(String configId, String key, Integer value);
+
+    public static native Integer rimeConfigSetDouble(String configId, String key, Double value);
+
+    public static native Integer rimeConfigSetString(String configId, String key, String value);
+
     public static native RimeSchemaListItem[] rimeGetSchemaList();
 
     public static native Integer rimeSelectSchema(Long sessionId, String schemaId);

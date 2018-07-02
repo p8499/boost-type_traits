@@ -86,6 +86,51 @@ namespace app {
     }
 
 /**
+ * convert between float and java/lang/Float
+ */
+    float ConvertToFloat(JNIEnv *env, jobject jobj) {
+        jfloat result = (jfloat) NULL;
+        if (jobj != NULL) {
+            jclass cls_Float = env->FindClass("java/lang/Float");//need delete
+            jmethodID mid_Float_floatValue = env->GetMethodID(cls_Float, "floatValue", "()F");
+            result = env->CallLongMethod(jobj, mid_Float_floatValue);
+            env->DeleteLocalRef(cls_Float);
+        }
+        return result;
+    }
+
+    jobject ConvertFromFloat(JNIEnv *env, float f) {
+        jclass cls_Float = env->FindClass("java/lang/Float");//need delete
+        jmethodID mid_Float_init = env->GetMethodID(cls_Float, "<init>", "(F)V");
+        jobject result = env->NewObject(cls_Float, mid_Float_init, f);
+        env->DeleteLocalRef(cls_Float);
+        return result;
+    }
+
+/**
+ * convert between double and java/lang/Double
+ */
+    float ConvertToDouble(JNIEnv *env, jobject jobj) {
+        jfloat result = (jdouble) NULL;
+        if (jobj != NULL) {
+            jclass cls_Double = env->FindClass("java/lang/Double");//need delete
+            jmethodID mid_Double_doubleValue = env->GetMethodID(cls_Double, "doubleValue", "()D");
+            result = env->CallDoubleMethod(jobj, mid_Double_doubleValue);
+            env->DeleteLocalRef(cls_Double);
+        }
+        return result;
+    }
+
+    jobject ConvertFromDouble(JNIEnv *env, double d) {
+        jclass cls_Double = env->FindClass("java/lang/Double");//need delete
+        jmethodID mid_Double_init = env->GetMethodID(cls_Double, "<init>", "(D)V");
+        jobject result = env->NewObject(cls_Double, mid_Double_init, d);
+        env->DeleteLocalRef(cls_Double);
+        return result;
+    }
+
+
+    /**
  * convert between char* and java/lang/String
  */
     char *ConvertToCharArray(JNIEnv *env, jstring jstr) {
@@ -247,6 +292,50 @@ namespace app {
     }
 
 /**
+ * set or get float (java.lang.Float) field
+ */
+    float GetFieldFloat(JNIEnv *env, jobject jobj, const char *name) {
+        jclass cls = env->GetObjectClass(jobj);//need delete
+        jfieldID fid = env->GetFieldID(cls, name, "Ljava/lang/Float;");
+        jobject obj = env->GetObjectField(jobj, fid);//need delete
+        float result = ConvertToFloat(env, obj);
+        env->DeleteLocalRef(obj);
+        env->DeleteLocalRef(cls);
+        return result;
+    }
+
+    void SetFieldFloat(JNIEnv *env, jobject jobj, const char *name, float value) {
+        jclass cls = env->GetObjectClass(jobj);//need delete
+        jfieldID fid = env->GetFieldID(cls, name, "Ljava/lang/Float;");
+        jobject obj = ConvertFromFloat(env, value);//need delete
+        env->SetObjectField(jobj, fid, obj);
+        env->DeleteLocalRef(obj);
+        env->DeleteLocalRef(cls);
+    }
+
+/**
+ * set or get double (java.lang.Double) field
+ */
+    double GetFieldDouble(JNIEnv *env, jobject jobj, const char *name) {
+        jclass cls = env->GetObjectClass(jobj);//need delete
+        jfieldID fid = env->GetFieldID(cls, name, "Ljava/lang/Double;");
+        jobject obj = env->GetObjectField(jobj, fid);//need delete
+        double result = ConvertToDouble(env, obj);
+        env->DeleteLocalRef(obj);
+        env->DeleteLocalRef(cls);
+        return result;
+    }
+
+    void SetFieldDouble(JNIEnv *env, jobject jobj, const char *name, double value) {
+        jclass cls = env->GetObjectClass(jobj);//need delete
+        jfieldID fid = env->GetFieldID(cls, name, "Ljava/lang/Double;");
+        jobject obj = ConvertFromDouble(env, value);//need delete
+        env->SetObjectField(jobj, fid, obj);
+        env->DeleteLocalRef(obj);
+        env->DeleteLocalRef(cls);
+    }
+
+    /**
  * set or get char* (java.lang.String) field
  */
     char *GetFieldString(JNIEnv *env, jobject jobj, const char *name) {
